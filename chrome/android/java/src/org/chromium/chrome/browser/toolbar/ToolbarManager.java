@@ -165,6 +165,7 @@ import org.chromium.chrome.browser.tabmodel.TabModelSelector;
 import org.chromium.chrome.browser.tabstrip.TabStripTopControlLayer;
 import org.chromium.chrome.browser.tasks.tab_management.TabGroupUi;
 import org.chromium.chrome.browser.tasks.tab_management.TabGroupUiOneshotSupplier;
+import org.chromium.chrome.browser.tasks.tab_management.TabGroupUiParams;
 import org.chromium.chrome.browser.theme.BottomUiThemeColorProvider;
 import org.chromium.chrome.browser.theme.ThemeColorProvider;
 import org.chromium.chrome.browser.theme.ThemeColorProvider.ThemeColorObserver;
