@@ -36,7 +36,7 @@ public class AppLocaleUtils {
     private AppLocaleUtils() {}
 
     // Value of AppLocale preference when the system language is used.
-    public static final @Nullable String.APP_LOCALE_USE_SYSTEM_LANGUAGE = null;
+    public static final @Nullable String APP_LOCALE_USE_SYSTEM_LANGUAGE = null;
 
     /**
      * Return true if languageName is the same as the current application override

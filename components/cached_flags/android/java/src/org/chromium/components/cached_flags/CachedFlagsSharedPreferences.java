@@ -33,7 +33,7 @@ public class CachedFlagsSharedPreferences {
     /** How many runs of Safe Mode for Cached Flags are left before trying a normal run. */
     public static final String FLAGS_SAFE_MODE_RUNS_LEFT = "Chrome.Flags.SafeModeRunsLeft";
 
-    public static final @Nullable PreferenceKeyRegistry.REGISTRY =
+    public static final @Nullable PreferenceKeyRegistry REGISTRY =
             (BuildConfig.ENABLE_ASSERTS
                     ? new PreferenceKeyRegistry(
                             /* module= */ "cached_flags",
