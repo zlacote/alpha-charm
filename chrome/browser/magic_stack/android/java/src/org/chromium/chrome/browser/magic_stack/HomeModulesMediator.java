@@ -60,7 +60,7 @@ public class HomeModulesMediator {
      * An array of cached responses (data) from modules. The size of the array is the number of
      * modules to show.
      */
-    private @Nullable MVCListAdapter ListItem @Nullable [] mModuleFetchResultsCache;
+    private @Nullable MVCListAdapter.ListItem @Nullable [] mModuleFetchResultsCache;
 
     /**
      * An array of cached responses from modules to indicate whether they have data to show. There
@@ -832,7 +832,7 @@ public class HomeModulesMediator {
         return mModuleTypeToRankingIndexMap;
     }
 
-    @Nullable MVCListAdapter ListItem @Nullable [] getModuleFetchResultsCacheForTesting() {
+    @Nullable MVCListAdapter.ListItem @Nullable [] getModuleFetchResultsCacheForTesting() {
         return mModuleFetchResultsCache;
     }
 

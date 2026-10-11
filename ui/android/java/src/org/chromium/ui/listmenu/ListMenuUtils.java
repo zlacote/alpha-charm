@@ -199,7 +199,7 @@ public class ListMenuUtils {
 
     public static class ListMenuKeyProvider implements HierarchicalMenuKeyProvider {
         @Override
-        public WritableObjectPropertyKey<@Nullable View OnClickListener> getClickListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View.OnClickListener> getClickListenerKey() {
             return CLICK_LISTENER;
         }
 
@@ -209,7 +209,7 @@ public class ListMenuUtils {
         }
 
         @Override
-        public WritableObjectPropertyKey<@Nullable View OnHoverListener> getHoverListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View.OnHoverListener> getHoverListenerKey() {
             return HOVER_LISTENER;
         }
 

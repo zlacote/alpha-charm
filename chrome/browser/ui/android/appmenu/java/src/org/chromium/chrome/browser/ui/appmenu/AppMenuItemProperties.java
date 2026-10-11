@@ -106,7 +106,7 @@ public class AppMenuItemProperties {
             new WritableObjectPropertyKey<>(/* skipEquality= */ true, "CLICK_HANDLER");
 
     /** The hover listener for menu items. */
-    public static final WritableObjectPropertyKey<@Nullable View OnHoverListener> HOVER_LISTENER =
+    public static final WritableObjectPropertyKey<@Nullable View.OnHoverListener> HOVER_LISTENER =
             new WritableObjectPropertyKey<>("HOVER_LISTENER");
 
     /** Whether the menu item has hover background. */

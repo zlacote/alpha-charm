@@ -27,11 +27,11 @@ import java.util.function.Supplier;
  */
 @NullMarked
 public interface HierarchicalMenuKeyProvider {
-    WritableObjectPropertyKey<@Nullable View OnClickListener> getClickListenerKey();
+    WritableObjectPropertyKey<@Nullable View.OnClickListener> getClickListenerKey();
 
     WritableBooleanPropertyKey getEnabledKey();
 
-    WritableObjectPropertyKey<@Nullable View OnHoverListener> getHoverListenerKey();
+    WritableObjectPropertyKey<@Nullable View.OnHoverListener> getHoverListenerKey();
 
     WritableObjectPropertyKey<CharSequence> getTitleKey();
 

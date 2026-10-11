@@ -18,7 +18,7 @@ import java.util.Collections;
  */
 @NullMarked
 public class MultiInstanceSharedPreferences {
-    public static final @Nullable PreferenceKeyRegistry REGISTRY =
+    public static final @Nullable PreferenceKeyRegistry.REGISTRY =
             (BuildConfig.ENABLE_ASSERTS
                     ? new PreferenceKeyRegistry(
                             "MultiInstance",

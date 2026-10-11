@@ -37,7 +37,7 @@ public class ProfileKeyedMap<T> {
      * @deprecated Use {@link #noRequiredCleanupAction()} instead, which is properly typed and
      *     avoids unchecked warnings.
      */
-    @Deprecated public static final @Nullable Callback NO_REQUIRED_CLEANUP_ACTION = null;
+    @Deprecated public static final @Nullable Callback.NO_REQUIRED_CLEANUP_ACTION = null;
 
     /** Uses to determine what Profile reference should be used and stored in the map. */
     @IntDef({ProfileSelection.OWN_INSTANCE, ProfileSelection.REDIRECTED_TO_ORIGINAL})

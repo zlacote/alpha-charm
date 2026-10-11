@@ -119,7 +119,7 @@ public class AppMenuUtil {
 
     public static class AppMenuKeyProvider implements HierarchicalMenuKeyProvider {
         @Override
-        public WritableObjectPropertyKey<@Nullable View OnClickListener> getClickListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View.OnClickListener> getClickListenerKey() {
             return AppMenuItemWithSubmenuProperties.CLICK_LISTENER;
         }
 
@@ -129,7 +129,7 @@ public class AppMenuUtil {
         }
 
         @Override
-        public WritableObjectPropertyKey<@Nullable View OnHoverListener> getHoverListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View.OnHoverListener> getHoverListenerKey() {
             return AppMenuItemProperties.HOVER_LISTENER;
         }
 
