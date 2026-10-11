@@ -166,6 +166,7 @@ android_library("core_java") {
     "java/src/org/chromium/chrome/browser/toolbar/bottom/ScrollingBottomViewResourceFrameLayout.java",
     "java/src/org/chromium/chrome/browser/toolbar/bottom/ScrollingBottomViewSceneLayer.java",
     "java/src/org/chromium/chrome/browser/toolbar/extensions/ExtensionsToolbarCoordinator.java",
+    "java/src/org/chromium/chrome/browser/toolbar/extensions/ExtensionsToolbarInitParams.java",
     "java/src/org/chromium/chrome/browser/toolbar/forward_button/ForwardButtonCoordinator.java",
     "java/src/org/chromium/chrome/browser/toolbar/home_button/HomeButton.java",
     "java/src/org/chromium/chrome/browser/toolbar/home_button/HomeButtonCoordinator.java",
@@ -351,21 +352,6 @@ android_library("core_java") {
     "//ui/edge_to_edge:java",
     "//url:gurl_java",
   ]
-
-  # ExtensionsToolbarCoordinator.java is compiled here and names
-  # ExtensionsToolbarInitParams, which lives in the extensions library below.
-  # It took a dependency object per group of collaborators for that to be true,
-  # and the source list alone cannot express it, so without this the stub
-  # generator reports:
-  #
-  #     ExtensionsToolbarCoordinator.java:36: error: could not resolve
-  #     ExtensionsToolbarInitParams
-  #
-  # Guarded on the same flag as the group below, because that library asserts
-  # the flag and does not exist without it.
-  if (enable_extensions_core) {
-    deps += [ "java/src/org/chromium/chrome/browser/toolbar/extensions:java" ]
-  }
 
   srcjar_deps = [ ":jni_headers" ]
 

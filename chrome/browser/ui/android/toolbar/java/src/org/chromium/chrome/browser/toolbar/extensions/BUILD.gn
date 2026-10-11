@@ -43,7 +43,6 @@ android_library("java") {
     "ExtensionsMenuViewBinder.java",
     "ExtensionsToolbarCoordinatorImpl.java",
     "ExtensionsToolbarDragTouchHandler.java",
-    "ExtensionsToolbarInitParams.java",
     "ExtensionsToolbarProperties.java",
     "SitePermissionsPageProperties.java",
     "SitePermissionsPageViewBinder.java",
