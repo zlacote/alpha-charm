@@ -69,7 +69,7 @@ class TabbedNavigationBarColorController
     private final @Nullable TabModelSelector mTabModelSelector;
     private final Callback<@Nullable Tab> mCurrentTabObserver;
     private final Callback<TabModel> mCurrentTabModelObserver;
-    private final @Nullable FullscreenManager Observer mFullscreenObserver;
+    private final @Nullable FullscreenManager.Observer mFullscreenObserver;
     private final MonotonicObservableSupplier<EdgeToEdgeController> mEdgeToEdgeControllerSupplier;
     private final MonotonicObservableSupplier<Integer> mOverviewColorSupplier;
     private final Callback<Integer> mOnOverviewColorChanged = color -> updateNavigationBarColor();

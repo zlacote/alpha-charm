@@ -22,7 +22,7 @@ public class XrSurfaceEntityUtils {
     private XrSurfaceEntityUtils() {}
 
     /** Creates a {@link Shape.CustomMesh} from the given {@link XrMeshData} array. */
-    public static @Nullable Shape CustomMesh createCustomMesh(XrMeshData[] meshDatas) {
+    public static @Nullable Shape.CustomMesh createCustomMesh(XrMeshData[] meshDatas) {
         if (meshDatas.length == 0 || meshDatas[0] == null) return null;
 
         XrMeshData leftEyeMeshData = meshDatas[0];
@@ -50,7 +50,7 @@ public class XrSurfaceEntityUtils {
         }
     }
 
-    private static @Nullable Shape TriangleMesh createTriangleMesh(@Nullable XrMeshData data) {
+    private static @Nullable Shape.TriangleMesh createTriangleMesh(@Nullable XrMeshData data) {
         if (data == null) return null;
         FloatBuffer positions = data.getPositionsAsFloatBuffer();
         FloatBuffer textureCoords = data.getTextureCoordsAsFloatBuffer();

@@ -229,7 +229,7 @@ public class TextViewWithClickableSpans extends TextViewWithLeading
     }
 
     @Override
-    public final void setOnLongClickListener(@Nullable View OnLongClickListener listener) {
+    public final void setOnLongClickListener(@Nullable View.OnLongClickListener listener) {
         // Ensure that no one changes the long click listener to anything but this view.
         assert listener == this || listener == null;
         super.setOnLongClickListener(listener);

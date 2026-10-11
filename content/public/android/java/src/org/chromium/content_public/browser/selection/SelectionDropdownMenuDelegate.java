@@ -90,7 +90,7 @@ public interface SelectionDropdownMenuDelegate {
      * Returns the click listener for the given item. If the click listener is unset or the key
      * doesn't exist, return null.
      */
-    default @Nullable View OnClickListener getClickListener(PropertyModel itemModel) {
+    default @Nullable View.OnClickListener getClickListener(PropertyModel itemModel) {
         return PropertyModel.getFromModelOrDefault(
                 itemModel, ListMenuItemProperties.CLICK_LISTENER, null);
     }

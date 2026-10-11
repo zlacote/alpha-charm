@@ -362,7 +362,7 @@ public class ApplicationStatus {
      * checking the declared fields of the given callback using reflection.
      */
     @VisibleForTesting
-    static boolean reachesWindowCallback(@Nullable Window Callback callback) {
+    static boolean reachesWindowCallback(@Nullable Window callback) {
         if (callback == null) return false;
         if (callback.getClass().getName().equals(TOOLBAR_CALLBACK_WRAPPER_CLASS)) {
             // We're actually not going to get called, see AndroidX report here:

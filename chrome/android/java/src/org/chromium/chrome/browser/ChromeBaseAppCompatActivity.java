@@ -145,7 +145,7 @@ public class ChromeBaseAppCompatActivity extends AppCompatActivity
     private @Nullable EdgeToEdgeManager mEdgeToEdgeManager;
     private @Nullable EdgeToEdgeLayoutCoordinator mEdgeToEdgeLayoutCoordinator;
     private @Nullable EdgeToEdgeControllerCreator mEdgeToEdgeControllerCreator;
-    private @Nullable NtpThemeStateProvider Observer mNtpThemeStateObserver;
+    private @Nullable NtpThemeStateProvider.Observer mNtpThemeStateObserver;
     private boolean mInMultiWindowMode;
 
     private static boolean sIsTabletDeterminationMismatchRecord;

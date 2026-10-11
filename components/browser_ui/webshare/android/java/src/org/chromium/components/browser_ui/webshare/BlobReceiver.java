@@ -46,7 +46,7 @@ public class BlobReceiver implements BlobReaderClient {
     private long mExpectedContentSize;
     private long mReceivedContentSize;
     private volatile boolean mIsClosed;
-    private @Nullable DataPipe ConsumerHandle mConsumerHandle;
+    private @Nullable DataPipe.ConsumerHandle mConsumerHandle;
     private volatile @Nullable Callback<Integer> mCallback;
     private @Nullable Blob mBlob;
     private final TaskRunner mTaskRunner;

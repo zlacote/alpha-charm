@@ -25,7 +25,7 @@ public class MostVisitedSitesBridge implements MostVisitedSites {
 
     private long mNativeMostVisitedSitesBridge;
 
-    private @Nullable MostVisitedSites Observer mWrappedObserver;
+    private @Nullable MostVisitedSites.Observer mWrappedObserver;
 
     /**
      * MostVisitedSites constructor requires a valid user profile object.

@@ -88,7 +88,7 @@ public class SmartSelectionEventProcessor implements SelectionEventProcessor {
     }
 
     public void onSelectionModified(
-            String selectionText, int startOffset, @Nullable SelectionClient Result result) {
+            String selectionText, int startOffset, @Nullable SelectionClient.Result result) {
         if (mSession == null) return;
         assumeNonNull(mConverter);
         if (!mConverter.updateSelectionState(selectionText, startOffset)) {
@@ -123,7 +123,7 @@ public class SmartSelectionEventProcessor implements SelectionEventProcessor {
             String selectionText,
             int startOffset,
             int action,
-            @Nullable SelectionClient Result result) {
+            @Nullable SelectionClient.Result result) {
         if (mSession == null) {
             return;
         }

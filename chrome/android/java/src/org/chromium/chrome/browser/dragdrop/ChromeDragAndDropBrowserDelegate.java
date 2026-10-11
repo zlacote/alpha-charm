@@ -176,7 +176,7 @@ public class ChromeDragAndDropBrowserDelegate implements DragAndDropBrowserDeleg
     }
 
     @SuppressWarnings("NewApi")
-    private static @Nullable ClipData Item buildClipDataItemWithPendingIntent(
+    private static @Nullable ClipData.Item buildClipDataItemWithPendingIntent(
             String clipDataText, PendingIntent pendingIntent) {
         if (sDefinedItemWithPendingIntentForTesting) return sItemWithPendingIntentForTesting;
         // This invocation is wrapped in a try-catch block to allow backporting of the

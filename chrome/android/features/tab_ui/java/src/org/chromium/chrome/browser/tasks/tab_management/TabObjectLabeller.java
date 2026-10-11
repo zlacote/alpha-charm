@@ -75,7 +75,7 @@ public abstract class TabObjectLabeller extends TabObjectNotificationUpdater {
     protected abstract int getTabId(PersistentMessage message);
 
     /** Returns a fetcher for the avatar image if there is one, otherwise null. */
-    protected @Nullable AsyncImageView Factory getAsyncImageFactory(PersistentMessage message) {
+    protected @Nullable AsyncImageView.Factory getAsyncImageFactory(PersistentMessage message) {
         return null;
     }
 

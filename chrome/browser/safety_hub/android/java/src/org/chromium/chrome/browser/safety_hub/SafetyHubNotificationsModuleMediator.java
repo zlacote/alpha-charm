@@ -147,7 +147,7 @@ public class SafetyHubNotificationsModuleMediator
                         .getString(R.string.safety_hub_notifications_reset_all_button);
     }
 
-    private @Nullable View OnClickListener getPrimaryButtonListener() {
+    private @Nullable View.OnClickListener getPrimaryButtonListener() {
         if (mNotificationPermissionsForReviewCount == 0) {
             return null;
         }

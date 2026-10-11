@@ -140,7 +140,7 @@ public class ChromeDialog extends ComponentDialog {
     }
 
     @Override
-    public void setContentView(View view, @Nullable ViewGroup LayoutParams params) {
+    public void setContentView(View view, @Nullable ViewGroup.LayoutParams params) {
         if (DeviceInfo.isAutomotive() && mIsFullScreen) {
             super.setContentView(
                     AutomotiveUtils.getAutomotiveLayoutWithBackButtonToolbar(mActivity));
@@ -155,7 +155,7 @@ public class ChromeDialog extends ComponentDialog {
     }
 
     @Override
-    public void addContentView(View view, @Nullable ViewGroup LayoutParams params) {
+    public void addContentView(View view, @Nullable ViewGroup.LayoutParams params) {
         if (DeviceInfo.isAutomotive()
                 && mIsFullScreen
                 && assumeNonNull(params).width == MATCH_PARENT

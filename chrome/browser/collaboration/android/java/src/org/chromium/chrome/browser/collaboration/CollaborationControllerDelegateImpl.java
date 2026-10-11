@@ -92,7 +92,7 @@ public class CollaborationControllerDelegateImpl implements CollaborationControl
     private @Nullable Runnable mCloseScreenRunnable;
 
     /** Used to suppress IPH UIs while a collaboration flow UI is on the screen. */
-    private @Nullable Tracker DisplayLockHandle mFeatureEngagementLock;
+    private @Nullable Tracker.DisplayLockHandle mFeatureEngagementLock;
 
     /**
      * Constructor for a new {@link CollaborationControllerDelegateImpl} object.

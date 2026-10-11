@@ -162,7 +162,7 @@ public class CrossDeviceSettingImporter implements TopResumedActivityChangedObse
     private @Nullable CrossDevicePrefTracker mPrefTrackerBeingObserved;
     private @Nullable CrossDevicePrefTrackerObserver mPrefTrackerObserver;
     private @Nullable CrossDeviceThemeTracker mThemeTrackerBeingObserved;
-    private @Nullable CrossDeviceThemeTracker Observer mThemeTrackerObserver;
+    private @Nullable CrossDeviceThemeTracker.Observer mThemeTrackerObserver;
 
     private final Callback<@Nullable Tab> mTabChangeCallback =
             new Callback<@Nullable Tab>() {

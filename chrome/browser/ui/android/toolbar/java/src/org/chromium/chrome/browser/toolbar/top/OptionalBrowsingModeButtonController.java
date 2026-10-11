@@ -48,7 +48,7 @@ public class OptionalBrowsingModeButtonController {
     private final List<ButtonDataProvider> mButtonDataProviders;
     private final ToolbarLayout mToolbarLayout;
     private final Supplier<@Nullable Tab> mTabSupplier;
-    private @Nullable OptionalBrowsingModeButtonController Delegate mDelegate;
+    private @Nullable OptionalBrowsingModeButtonController.Delegate mDelegate;
 
     /**
      * Creates a new OptionalBrowsingModeButtonController.

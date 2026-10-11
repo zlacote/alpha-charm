@@ -47,7 +47,7 @@ import java.util.function.Supplier;
     private final Supplier<Boolean> mIsHomeButtonMenuDisabled;
 
     private final Callback<Context> mOnMenuClickCallback;
-    private @Nullable MVCListAdapter ModelList mMenuList;
+    private @Nullable MVCListAdapter.ModelList mMenuList;
     private @Nullable ListMenuDelegate mListMenuDelegate;
 
     private final @Nullable NullableObservableSupplier<PropertyModel> mHomeActionModelSupplier;
@@ -165,7 +165,7 @@ import java.util.function.Supplier;
         ImageViewCompat.setImageTintList(mHomeButton, tint);
     }
 
-    public @Nullable MVCListAdapter ModelList getMenuForTesting() {
+    public @Nullable MVCListAdapter.ModelList getMenuForTesting() {
         return mMenuList;
     }
 }

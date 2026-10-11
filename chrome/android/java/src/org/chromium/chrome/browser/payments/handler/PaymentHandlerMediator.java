@@ -68,7 +68,7 @@ import java.lang.annotation.RetentionPolicy;
     private final InputProtector mInputProtector;
 
     /** A token held while the payment sheet is obscuring all visible tabs. */
-    private @Nullable TabObscuringHandler Token mTabObscuringToken;
+    private @Nullable TabObscuringHandler.Token mTabObscuringToken;
 
     private @Nullable PropertyModel mScrimProperties;
     private boolean mIsDestroyed;

@@ -21,7 +21,7 @@ public class DisplayStyleObserverAdapter
     private final View mView;
 
     /** Current display style, gets updated as the UiConfig detects changes and notifies us. */
-    private @Nullable UiConfig DisplayStyle mCurrentDisplayStyle;
+    private @Nullable UiConfig.DisplayStyle mCurrentDisplayStyle;
 
     private boolean mIsViewAttached;
 
@@ -55,7 +55,7 @@ public class DisplayStyleObserverAdapter
     }
 
     @Override
-    public void onDisplayStyleChanged(@Nullable UiConfig DisplayStyle newDisplayStyle) {
+    public void onDisplayStyleChanged(@Nullable UiConfig.DisplayStyle newDisplayStyle) {
         assert newDisplayStyle != null;
         mCurrentDisplayStyle = newDisplayStyle;
 

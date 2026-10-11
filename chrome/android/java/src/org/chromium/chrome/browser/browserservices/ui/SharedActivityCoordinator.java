@@ -138,7 +138,7 @@ public class SharedActivityCoordinator implements InflationObserver {
     }
 
     private static boolean appModeUiAllowedFor(
-            @Nullable CurrentPageVerifier VerificationState state) {
+            @Nullable CurrentPageVerifier.VerificationState state) {
         return state == null || state.status != VerificationStatus.FAILURE;
     }
 

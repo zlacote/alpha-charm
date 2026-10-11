@@ -72,7 +72,7 @@ public class MediaSessionHelper implements MediaImageCallback {
     private @Nullable Bitmap mCurrentMediaImage;
     private @Nullable String mOrigin;
     private int mPreviousVolumeControlStream = AudioManager.USE_DEFAULT_STREAM_TYPE;
-    @VisibleForTesting public @Nullable MediaNotificationInfo Builder mNotificationInfoBuilder;
+    @VisibleForTesting public @Nullable MediaNotificationInfo.Builder mNotificationInfoBuilder;
     // The fallback title if |mPageMetadata| is null or its title is empty.
     private @Nullable String mFallbackTitle;
     // Set to true if favicon update callback was called at least once.

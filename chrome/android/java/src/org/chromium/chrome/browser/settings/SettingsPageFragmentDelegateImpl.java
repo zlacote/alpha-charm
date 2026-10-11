@@ -89,8 +89,8 @@ public class SettingsPageFragmentDelegateImpl
     private final Tab mTab;
 
     private @Nullable SettingsHostFragment mSettingsHostFragment;
-    private @Nullable FragmentManager FragmentLifecycleCallbacks mTitleUpdaterLifecycleCallbacks;
-    private @Nullable FragmentManager FragmentLifecycleCallbacks mSettingsMetricsReporter;
+    private @Nullable FragmentManager.FragmentLifecycleCallbacks mTitleUpdaterLifecycleCallbacks;
+    private @Nullable FragmentManager.FragmentLifecycleCallbacks mSettingsMetricsReporter;
     private @Nullable Toolbar mToolbar;
     private @Nullable MultiColumnTitleUpdater mMultiColumnTitleUpdater;
     private @Nullable SettingsSearchCoordinator mSearchCoordinator;

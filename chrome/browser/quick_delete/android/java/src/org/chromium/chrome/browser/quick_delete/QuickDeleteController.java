@@ -190,7 +190,7 @@ public class QuickDeleteController {
     }
 
     private void maybeShowQuickDeleteAnimation(
-            @TimePeriod int timePeriod, @Nullable Tracker DisplayLockHandle trackerLock) {
+            @TimePeriod int timePeriod, @Nullable Tracker.DisplayLockHandle trackerLock) {
         mDeleteRegularTabsFilter.prepareListOfTabsToBeClosed(timePeriod);
         if (mDeleteArchivedTabsFilter != null) {
             mDeleteArchivedTabsFilter.prepareListOfTabsToBeClosed(timePeriod);
@@ -212,7 +212,7 @@ public class QuickDeleteController {
     }
 
     private void closeTabsAndShowPostDeleteFeedback(
-            @TimePeriod int timePeriod, @Nullable Tracker DisplayLockHandle trackerLock) {
+            @TimePeriod int timePeriod, @Nullable Tracker.DisplayLockHandle trackerLock) {
         mDeleteRegularTabsFilter.closeTabsFilteredForQuickDelete();
         if (mDeleteArchivedTabsFilter != null) {
             mDeleteArchivedTabsFilter.closeTabsFilteredForQuickDelete();
@@ -221,7 +221,7 @@ public class QuickDeleteController {
     }
 
     private void showPostDeleteFeedback(
-            @TimePeriod int timePeriod, @Nullable Tracker DisplayLockHandle trackerLock) {
+            @TimePeriod int timePeriod, @Nullable Tracker.DisplayLockHandle trackerLock) {
         triggerHapticFeedback();
         showSnackbar(timePeriod);
 

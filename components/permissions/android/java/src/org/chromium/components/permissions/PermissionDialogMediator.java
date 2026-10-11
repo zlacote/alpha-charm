@@ -64,7 +64,7 @@ public class PermissionDialogMediator
     private @Nullable LocationPrecisionChooserController mLocationPrecisionChooserController;
     protected @Nullable PermissionDialogDelegate mDialogDelegate;
     protected @Nullable ModalDialogManager mModalDialogManager;
-    protected @Nullable PermissionDialogCoordinator Delegate mCoordinatorDelegate;
+    protected @Nullable PermissionDialogCoordinator.Delegate mCoordinatorDelegate;
 
     /** The current state, whether we have a prompt showing and so on. */
     protected @State int mState;

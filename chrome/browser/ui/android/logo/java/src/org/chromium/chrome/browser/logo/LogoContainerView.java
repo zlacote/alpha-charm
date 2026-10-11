@@ -163,7 +163,7 @@ public class LogoContainerView extends FrameLayout {
         return mLogoView.getAnimationEnabledForTesting(); // IN-TEST
     }
 
-    @Nullable LogoView ClickHandler getClickHandlerForTesting() {
+    @Nullable LogoView.ClickHandler getClickHandlerForTesting() {
         return mLogoView.getClickHandlerForTesting(); // IN-TEST
     }
 

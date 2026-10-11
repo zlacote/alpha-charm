@@ -135,7 +135,7 @@ public class ReadAloudController
     private final Activity mActivity;
     private final MonotonicObservableSupplier<Profile> mProfileSupplier;
     private final OneshotSupplier<LayoutStateProvider> mLayoutStateProviderSupplier;
-    private @Nullable LayoutStateProvider LayoutStateObserver mLayoutStateObserver;
+    private @Nullable LayoutStateProvider.LayoutStateObserver mLayoutStateObserver;
 
     private final ObserverList<Runnable> mReadabilityUpdateObserverList = new ObserverList<>();
     private static final int MAX_URL_ENTRIES = 300;
@@ -167,7 +167,7 @@ public class ReadAloudController
 
     @Nullable private ReadAloudPlaybackHooks mPlaybackHooks;
     @Nullable private Highlighter mHighlighter;
-    private @Nullable Highlighter Config mHighlighterConfig;
+    private @Nullable Highlighter.Config mHighlighterConfig;
     private @Nullable Extractor mExtractor;
 
     // Information tied to a playback. When playback is reset it should be set to null together

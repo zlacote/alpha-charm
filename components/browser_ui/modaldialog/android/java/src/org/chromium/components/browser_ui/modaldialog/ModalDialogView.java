@@ -631,7 +631,7 @@ public class ModalDialogView extends BoundedLinearLayout implements View.OnClick
 
     /** Sets the listener for the checkbox. */
     void setOnCheckboxCheckedChangeListener(
-            @Nullable CompoundButton OnCheckedChangeListener listener) {
+            @Nullable CompoundButton.OnCheckedChangeListener listener) {
         mCheckboxView.setOnCheckedChangeListener(listener);
     }
 

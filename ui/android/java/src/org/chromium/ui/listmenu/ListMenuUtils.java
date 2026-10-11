@@ -83,7 +83,7 @@ public class ListMenuUtils {
     public static ListMenuItemAdapter createAdapter(
             ModelList listItems,
             Collection<Integer> disabledTypes,
-            @Nullable ListMenu Delegate delegate) {
+            @Nullable ListMenu.Delegate delegate) {
         ListMenuItemAdapter adapter = new ListMenuItemAdapter(listItems, disabledTypes, delegate);
 
         adapter.registerType(

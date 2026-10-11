@@ -598,7 +598,7 @@ public class FeedStream implements Stream {
             new ArrayList<>();
 
     // Placeholder view that simply takes up space.
-    private @Nullable FeedListContentManager NativeViewContent mSpacerViewContent;
+    private @Nullable FeedListContentManager.NativeViewContent mSpacerViewContent;
 
     // Bottomsheet.
     private final BottomSheetController mBottomSheetController;

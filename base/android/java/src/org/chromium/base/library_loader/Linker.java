@@ -774,7 +774,7 @@ class Linker {
         int getRelroSharingResult();
     }
 
-    private static @Nullable Linker Natives sNativesInstance;
+    private static @Nullable Linker.Natives sNativesInstance;
 
     static void setLinkerNativesForTesting(Natives instance) {
         sNativesInstance = instance;

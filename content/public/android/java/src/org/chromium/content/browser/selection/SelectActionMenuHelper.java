@@ -112,7 +112,7 @@ public class SelectActionMenuHelper {
             TextSelectionCapabilitiesDelegate delegate,
             PendingSelectionMenu menu,
             Context context,
-            @Nullable SelectionClient Result classificationResult,
+            @Nullable SelectionClient.Result classificationResult,
             @MenuType int menuType,
             boolean isSelectionPassword,
             boolean isSelectionReadOnly,
@@ -164,7 +164,7 @@ public class SelectActionMenuHelper {
     private static @Nullable SelectionMenuItem getPrimaryAssistItem(
             Context context,
             String selectedText,
-            @Nullable SelectionClient Result classificationResult) {
+            @Nullable SelectionClient.Result classificationResult) {
         if (selectedText.isEmpty()) {
             return null;
         }

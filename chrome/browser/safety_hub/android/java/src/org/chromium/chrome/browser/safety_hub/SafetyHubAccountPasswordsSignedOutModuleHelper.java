@@ -42,7 +42,7 @@ public class SafetyHubAccountPasswordsSignedOutModuleHelper implements SafetyHub
     }
 
     @Override
-    public @Nullable View OnClickListener getPrimaryButtonListener() {
+    public @Nullable View.OnClickListener getPrimaryButtonListener() {
         return null;
     }
 

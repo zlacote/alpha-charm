@@ -29,12 +29,12 @@ import java.io.Closeable;
 @NullMarked
 public class StrictModeContext implements Closeable {
     private static class Impl extends StrictModeContext {
-        private final @Nullable StrictMode ThreadPolicy mThreadPolicy;
-        private final @Nullable StrictMode VmPolicy mVmPolicy;
+        private final @Nullable StrictMode.ThreadPolicy mThreadPolicy;
+        private final @Nullable StrictMode.VmPolicy mVmPolicy;
 
         private Impl(
-                @Nullable StrictMode ThreadPolicy threadPolicy,
-                @Nullable StrictMode VmPolicy vmPolicy) {
+                @Nullable StrictMode.ThreadPolicy threadPolicy,
+                @Nullable StrictMode.VmPolicy vmPolicy) {
             mThreadPolicy = threadPolicy;
             mVmPolicy = vmPolicy;
         }

@@ -40,7 +40,7 @@ public class PrivacyPreferencesManagerImpl implements PrivacyPreferencesManager 
     private final Context mContext;
     private final SharedPreferencesManager mPrefs;
     private @Nullable PolicyService mPolicyService;
-    private @Nullable PolicyService Observer mPolicyServiceObserver;
+    private @Nullable PolicyService.Observer mPolicyServiceObserver;
 
     // Supplier for other class to observe. Null until the supplier is requested.
     private @Nullable SettableNonNullObservableSupplier<Boolean> mCrashUploadPermittedSupplier;

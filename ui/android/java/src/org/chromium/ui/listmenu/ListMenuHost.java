@@ -66,7 +66,7 @@ public class ListMenuHost
         AnchoredPopupWindow injectPopupMenu(@Nullable AnchoredPopupWindow menu);
     }
 
-    private static @Nullable ListMenuHost PopupMenuHelper sPopupMenuHelperForTesting;
+    private static @Nullable ListMenuHost.PopupMenuHelper sPopupMenuHelperForTesting;
 
     private final View mView;
     private final boolean mMenuVerticalOverlapAnchor;

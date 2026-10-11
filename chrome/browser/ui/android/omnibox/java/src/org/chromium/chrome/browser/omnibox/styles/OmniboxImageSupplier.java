@@ -59,7 +59,7 @@ public class OmniboxImageSupplier {
     private final Context mContext;
     private final Map<GURL, List<Callback<Drawable>>> mPendingImageRequests;
     private final Map<String, Drawable.ConstantState> mDrawableCache;
-    private @Nullable Drawable ConstantState mBackgroundDrawableState;
+    private @Nullable Drawable.ConstantState mBackgroundDrawableState;
     private final int mDesiredFaviconWidthPx;
     private final int mFallbackIconSize;
     private final int mFallbackIconColor;

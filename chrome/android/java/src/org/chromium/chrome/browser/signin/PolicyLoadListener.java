@@ -38,7 +38,7 @@ public class PolicyLoadListener implements OneshotSupplier<Boolean> {
     private final OneshotSupplierImpl<Boolean> mMightHavePoliciesSupplier;
     private final OneshotSupplier<PolicyService> mPolicyServiceSupplier;
 
-    private @Nullable PolicyService Observer mPolicyServiceObserver;
+    private @Nullable PolicyService.Observer mPolicyServiceObserver;
 
     /**
      * Whether app restriction is found on the device. This can be null when this information is not

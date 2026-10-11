@@ -41,7 +41,7 @@ public class SafetyHubPasswordsCheckingModuleHelper implements SafetyHubModuleHe
     }
 
     @Override
-    public @Nullable View OnClickListener getPrimaryButtonListener() {
+    public @Nullable View.OnClickListener getPrimaryButtonListener() {
         return null;
     }
 
@@ -51,7 +51,7 @@ public class SafetyHubPasswordsCheckingModuleHelper implements SafetyHubModuleHe
     }
 
     @Override
-    public @Nullable View OnClickListener getSecondaryButtonListener() {
+    public @Nullable View.OnClickListener getSecondaryButtonListener() {
         return null;
     }
 

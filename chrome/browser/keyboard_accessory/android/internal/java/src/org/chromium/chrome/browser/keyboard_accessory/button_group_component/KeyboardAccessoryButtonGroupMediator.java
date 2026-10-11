@@ -126,7 +126,7 @@ class KeyboardAccessoryButtonGroupMediator
     }
 
     @Override
-    public @Nullable KeyboardAccessoryData Tab getActiveTab() {
+    public @Nullable KeyboardAccessoryData.Tab getActiveTab() {
         if (mModel.get(ACTIVE_TAB) == null) return null;
         return mModel.get(TABS).get(mModel.get(ACTIVE_TAB));
     }

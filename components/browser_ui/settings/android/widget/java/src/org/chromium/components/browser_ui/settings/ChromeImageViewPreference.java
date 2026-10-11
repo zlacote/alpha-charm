@@ -41,7 +41,7 @@ public class ChromeImageViewPreference extends Preference {
     private @Nullable ManagedPreferenceDelegate mManagedPrefDelegate;
 
     /** The onClick listener to handle click events for the ImageView widget. */
-    private @Nullable View OnClickListener mListener;
+    private @Nullable View.OnClickListener mListener;
 
     /** The image resource ID to use for the ImageView widget source. */
     @DrawableRes private int mImageRes;
@@ -128,7 +128,7 @@ public class ChromeImageViewPreference extends Preference {
     public void setImageView(
             @DrawableRes int imageRes,
             @Nullable CharSequence contentDescription,
-            @Nullable View OnClickListener listener) {
+            @Nullable View.OnClickListener listener) {
         mImageRes = imageRes;
         mContentDescription = contentDescription;
         mListener = listener;
@@ -144,7 +144,7 @@ public class ChromeImageViewPreference extends Preference {
     public void setImageView(
             @DrawableRes int imageRes,
             @StringRes int contentDescriptionRes,
-            @Nullable View OnClickListener listener) {
+            @Nullable View.OnClickListener listener) {
         setImageView(
                 imageRes,
                 (contentDescriptionRes != 0) ? getContext().getString(contentDescriptionRes) : null,

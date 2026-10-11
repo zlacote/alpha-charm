@@ -56,7 +56,7 @@ public class ProfileKeyedMap<T> {
     @ProfileSelection private final int mProfileSelection;
     private final @Nullable Callback<T> mDestroyAction;
 
-    private @Nullable ProfileManager Observer mProfileManagerObserver;
+    private @Nullable ProfileManager.Observer mProfileManagerObserver;
 
     /**
      * Creates a map of Profile -> Object that handles automatically cleaning up when the profiles

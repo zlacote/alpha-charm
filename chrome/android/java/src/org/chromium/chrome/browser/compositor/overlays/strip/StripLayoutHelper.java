@@ -693,15 +693,15 @@ public class StripLayoutHelper
     private @MonotonicNonNull CollaborationService mCollaborationService;
 
     private final DataSharingTabManager mDataSharingTabManager;
-    private @Nullable DataSharingService Observer mDataSharingObserver;
+    private @Nullable DataSharingService.Observer mDataSharingObserver;
     private @Nullable TabGroupSyncService mTabGroupSyncService;
-    private @Nullable TabGroupSyncService Observer mTabGroupSyncObserver;
+    private @Nullable TabGroupSyncService.Observer mTabGroupSyncObserver;
 
     private final List<QueuedIph> mQueuedIphList = new ArrayList<>();
 
     private final StripLayoutTabDelegate mTabDelegate;
     private @Nullable TabUnderlineManager mTabUnderlineManager;
-    private @Nullable TabUnderlineManager Observer mTabUnderlineObserver;
+    private @Nullable TabUnderlineManager.Observer mTabUnderlineObserver;
 
     // Pinned tabs.
     private boolean mIsPinnedOnlyStripRecorded;

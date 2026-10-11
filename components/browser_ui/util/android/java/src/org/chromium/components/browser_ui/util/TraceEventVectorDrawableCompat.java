@@ -21,7 +21,7 @@ import org.chromium.build.annotations.Nullable;
 public class TraceEventVectorDrawableCompat {
     /** Wrapper of VectorDrawableCompat.create() with trace event. */
     public static @Nullable VectorDrawableCompat create(
-            Resources res, @DrawableRes int resId, @Nullable Resources Theme theme) {
+            Resources res, @DrawableRes int resId, @Nullable Resources.Theme theme) {
         try (TraceEvent te = TraceEvent.scoped("VectorDrawableCompat.create")) {
             return VectorDrawableCompat.create(res, resId, theme);
         }

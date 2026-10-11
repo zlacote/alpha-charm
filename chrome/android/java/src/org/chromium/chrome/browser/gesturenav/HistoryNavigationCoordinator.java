@@ -63,7 +63,7 @@ public class HistoryNavigationCoordinator
     private BackActionDelegate mBackActionDelegate;
     private @Nullable Tab mTab;
     private @Nullable FullscreenManager mFullscreenManager;
-    private @Nullable FullscreenManager Observer mFullscreenObserver;
+    private @Nullable FullscreenManager.Observer mFullscreenObserver;
     private boolean mEnabled;
     private boolean mIsFullscreen;
 

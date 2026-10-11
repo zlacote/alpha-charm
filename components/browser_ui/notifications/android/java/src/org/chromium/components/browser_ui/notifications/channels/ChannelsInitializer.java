@@ -146,7 +146,7 @@ public class ChannelsInitializer {
         ensureInitializedWithEnabledState(channelId, false);
     }
 
-    private @Nullable ChannelDefinitions PredefinedChannel getPredefinedChannel(String channelId) {
+    private @Nullable ChannelDefinitions.PredefinedChannel getPredefinedChannel(String channelId) {
         if (mChannelDefinitions.isValidNonPredefinedChannelId(channelId)) return null;
         ChannelDefinitions.PredefinedChannel predefinedChannel =
                 mChannelDefinitions.getChannelFromId(channelId);

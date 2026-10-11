@@ -95,7 +95,7 @@ public class AdaptiveToolbarButtonController
     private final AdaptiveToolbarBehavior mToolbarBehavior;
 
     private @Nullable AdaptiveToolbarStatePredictor mAdaptiveToolbarStatePredictor;
-    private @Nullable View OnLongClickListener mMenuHandler;
+    private @Nullable View.OnLongClickListener mMenuHandler;
     private final Callback<Integer> mMenuClickListener;
     private final AdaptiveButtonActionMenuCoordinator mMenuCoordinator;
     private int mScreenWidthDp;
@@ -360,7 +360,7 @@ public class AdaptiveToolbarButtonController
         };
     }
 
-    private @Nullable View OnLongClickListener createMenuHandler() {
+    private @Nullable View.OnLongClickListener createMenuHandler() {
         if (!FeatureList.isInitialized()) return null;
         return mMenuCoordinator.createOnLongClickListener(mMenuClickListener);
     }

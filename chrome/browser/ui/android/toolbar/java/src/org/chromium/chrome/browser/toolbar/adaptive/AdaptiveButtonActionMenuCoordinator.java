@@ -46,7 +46,7 @@ public class AdaptiveButtonActionMenuCoordinator {
      *
      * @param onItemClicked called when a menu item is selected
      */
-    public @Nullable View OnLongClickListener createOnLongClickListener(
+    public @Nullable View.OnLongClickListener createOnLongClickListener(
             Callback<Integer> onItemClicked) {
         if (!AdaptiveToolbarFeatures.isCustomizationEnabled()) return null;
 

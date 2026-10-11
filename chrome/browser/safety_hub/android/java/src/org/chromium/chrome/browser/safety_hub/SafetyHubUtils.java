@@ -106,7 +106,7 @@ class SafetyHubUtils {
     }
 
     static @ModuleState int getUpdateCheckModuleState(
-            @Nullable UpdateStatusProvider UpdateStatus updateStatus) {
+            @Nullable UpdateStatusProvider.UpdateStatus updateStatus) {
         if (updateStatus == null
                 || updateStatus.updateState
                         == UpdateStatusProvider.UpdateState.UNSUPPORTED_OS_VERSION) {

@@ -195,7 +195,7 @@ public abstract class TabListItemTouchHelperCallback extends ItemTouchHelper2.Si
      * @param viewHolder The card ViewHolder to inspect.
      * @return True if the card represents a tab; false otherwise.
      */
-    protected boolean hasTabPropertiesModel(@Nullable RecyclerView ViewHolder viewHolder) {
+    protected boolean hasTabPropertiesModel(@Nullable RecyclerView.ViewHolder viewHolder) {
         if (viewHolder instanceof SimpleRecyclerViewAdapter.ViewHolder simpleViewHolder) {
             PropertyModel model = simpleViewHolder.model;
             assumeNonNull(model);
@@ -211,7 +211,7 @@ public abstract class TabListItemTouchHelperCallback extends ItemTouchHelper2.Si
      * @param viewHolder The card ViewHolder to inspect.
      * @return True if the card represents a pinned tab; false otherwise.
      */
-    protected boolean isPinnedRegularTab(@Nullable RecyclerView ViewHolder viewHolder) {
+    protected boolean isPinnedRegularTab(@Nullable RecyclerView.ViewHolder viewHolder) {
         if (viewHolder instanceof SimpleRecyclerViewAdapter.ViewHolder simpleViewHolder) {
             PropertyModel model = simpleViewHolder.model;
             if (model != null) {
@@ -227,7 +227,7 @@ public abstract class TabListItemTouchHelperCallback extends ItemTouchHelper2.Si
      * @param viewHolder The card ViewHolder to inspect.
      * @return True if the card represents a collaborative tab group; false otherwise.
      */
-    protected boolean hasCollaboration(@Nullable RecyclerView ViewHolder viewHolder) {
+    protected boolean hasCollaboration(@Nullable RecyclerView.ViewHolder viewHolder) {
         if (viewHolder instanceof SimpleRecyclerViewAdapter.ViewHolder simpleViewHolder) {
             PropertyModel model = simpleViewHolder.model;
             assumeNonNull(model);
@@ -353,7 +353,7 @@ public abstract class TabListItemTouchHelperCallback extends ItemTouchHelper2.Si
      * @param listener the handler for longpress actions.
      */
     public void setOnLongPressTabItemEventListener(
-            @Nullable TabGridItemLongPressOrchestrator OnLongPressTabItemEventListener listener) {
+            @Nullable TabGridItemLongPressOrchestrator.OnLongPressTabItemEventListener listener) {
         assert mTabGridItemLongPressOrchestrator == null;
         if (listener != null) {
             setTabGridItemLongPressOrchestrator(

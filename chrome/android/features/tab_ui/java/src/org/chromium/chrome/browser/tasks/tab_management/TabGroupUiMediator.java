@@ -157,7 +157,7 @@ public class TabGroupUiMediator implements BackPressHandler {
 
     // These should only be used when regular (non-incognito) tabs are set in the model.
     private final @Nullable SharedImageTilesCoordinator mSharedImageTilesCoordinator;
-    private final @Nullable SharedImageTilesConfig Builder mSharedImageTilesConfigBuilder;
+    private final @Nullable SharedImageTilesConfig.Builder mSharedImageTilesConfigBuilder;
     private final @Nullable TransitiveSharedGroupObserver mTransitiveSharedGroupObserver;
 
     private final LayoutStateObserver mLayoutStateObserver;
@@ -183,7 +183,7 @@ public class TabGroupUiMediator implements BackPressHandler {
             @Nullable LazyOneshotSupplier<DialogController> dialogControllerSupplier,
             NonNullObservableSupplier<Boolean> omniboxFocusStateSupplier,
             @Nullable SharedImageTilesCoordinator sharedImageTilesCoordinator,
-            @Nullable SharedImageTilesConfig Builder sharedImageTilesConfigBuilder,
+            @Nullable SharedImageTilesConfig.Builder sharedImageTilesConfigBuilder,
             ThemeColorProvider themeColorProvider,
             Callback<Object> onSnapshotTokenChange,
             MonotonicObservableSupplier<Object> childTokenSupplier) {

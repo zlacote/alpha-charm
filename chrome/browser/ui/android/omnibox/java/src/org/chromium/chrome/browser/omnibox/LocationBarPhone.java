@@ -39,7 +39,7 @@ class LocationBarPhone extends LocationBarLayout {
     private final int mUrlCenteringSafetyMarginPx;
     private final int mMinUrlWidthPx;
     private final int mNonCenteredUrlBarEndPaddingPx;
-    private @Nullable LocationBarDataProvider Observer mUrlObserver;
+    private @Nullable LocationBarDataProvider.Observer mUrlObserver;
 
     private @FuseboxState int mFuseboxState = FuseboxState.DISABLED;
 
