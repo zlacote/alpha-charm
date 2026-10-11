@@ -416,13 +416,12 @@ public class SigninAndHistorySyncActivity extends FullscreenSigninAndHistorySync
 
         BottomSheetController bottomSheetController =
                 BottomSheetControllerFactory.createBottomSheetController(
-                        new BottomSheetParams()
-                                .newBuilder(
-                                        () -> scrimManager,
-                                        getWindow(),
-                                        KeyboardVisibilityDelegate.getInstance(),
-                                        () -> sheetContainer,
-                                        getInsetObserver())
+                        BottomSheetParams.newBuilder(
+                                () -> scrimManager,
+                                getWindow(),
+                                KeyboardVisibilityDelegate.getInstance(),
+                                () -> sheetContainer,
+                                getInsetObserver())
                                 .setEnableLargeFormFactorUi(
                                         ChromeFeatureList.sBottomSheetOnDesktopWindowing
                                                 .isEnabled())

@@ -2533,18 +2533,17 @@ public class RootUiCoordinator
         // suppliers.
         ManagedBottomSheetController bottomSheetController =
                 BottomSheetControllerFactory.createBottomSheetController(
-                        new BottomSheetParams()
-                                .newBuilder(
-                                        mScrimManagerSupplier,
-                                        mActivity.getWindow(),
-                                        mWindowAndroid.getKeyboardDelegate(),
-                                        () -> {
-                                            if (mActivity != null) {
-                                                return mActivity.findViewById(R.id.sheet_container);
-                                            }
-                                            return null;
-                                        },
-                                        mWindowAndroid.getInsetObserver())
+                        BottomSheetParams.newBuilder(
+                                mScrimManagerSupplier,
+                                mActivity.getWindow(),
+                                mWindowAndroid.getKeyboardDelegate(),
+                                () -> {
+                                if (mActivity != null) {
+                                return mActivity.findViewById(R.id.sheet_container);
+                                }
+                                return null;
+                                },
+                                mWindowAndroid.getInsetObserver())
                                 .setEdgeToEdgeBottomInsetSupplier(
                                         () -> {
                                             var edgeToEdgeController =

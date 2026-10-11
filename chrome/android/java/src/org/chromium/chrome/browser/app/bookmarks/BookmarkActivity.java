@@ -92,13 +92,12 @@ public class BookmarkActivity extends SnackbarActivity {
         ViewGroup sheetContainer = findViewById(R.id.sheet_container);
         BottomSheetController bottomSheetController =
                 BottomSheetControllerFactory.createBottomSheetController(
-                        new BottomSheetParams()
-                                .newBuilder(
-                                        () -> scrimManager,
-                                        getWindow(),
-                                        getWindowAndroid().getKeyboardDelegate(),
-                                        () -> sheetContainer,
-                                        getWindowAndroid().getInsetObserver())
+                        BottomSheetParams.newBuilder(
+                                () -> scrimManager,
+                                getWindow(),
+                                getWindowAndroid().getKeyboardDelegate(),
+                                () -> sheetContainer,
+                                getWindowAndroid().getInsetObserver())
                                 .setEdgeToEdgeBottomInsetSupplier(() -> getEdgeToEdgeInset())
                                 .setEnableLargeFormFactorUi(
                                         ChromeFeatureList.sBottomSheetOnDesktopWindowing

@@ -95,13 +95,12 @@ public class HistoryActivity extends SnackbarActivity {
                 new ScrimManager(this, contentView, ScrimClient.HISTORY_ACTIVITY);
         mBottomSheetController =
                 BottomSheetControllerFactory.createBottomSheetController(
-                        new BottomSheetParams()
-                                .newBuilder(
-                                        SupplierUtils.of(scrimManager),
-                                        getWindow(),
-                                        getWindowAndroid().getKeyboardDelegate(),
-                                        SupplierUtils.of(sheetContainer),
-                                        getWindowAndroid().getInsetObserver())
+                        BottomSheetParams.newBuilder(
+                                SupplierUtils.of(scrimManager),
+                                getWindow(),
+                                getWindowAndroid().getKeyboardDelegate(),
+                                SupplierUtils.of(sheetContainer),
+                                getWindowAndroid().getInsetObserver())
                                 .setEnableLargeFormFactorUi(
                                         ChromeFeatureList.sBottomSheetOnDesktopWindowing
                                                 .isEnabled())

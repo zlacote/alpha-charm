@@ -576,13 +576,12 @@ public class SettingsActivity extends ChromeBaseAppCompatActivity
 
         mManagedBottomSheetController =
                 BottomSheetControllerFactory.createBottomSheetController(
-                        new BottomSheetParams()
-                                .newBuilder(
-                                        () -> mScrimManager,
-                                        getWindow(),
-                                        KeyboardVisibilityDelegate.getInstance(),
-                                        () -> sheetContainer,
-                                        getInsetObserver())
+                        BottomSheetParams.newBuilder(
+                                () -> mScrimManager,
+                                getWindow(),
+                                KeyboardVisibilityDelegate.getInstance(),
+                                () -> sheetContainer,
+                                getInsetObserver())
                                 .setEnableLargeFormFactorUi(
                                         ChromeFeatureList.sBottomSheetOnDesktopWindowing
                                                 .isEnabled())
