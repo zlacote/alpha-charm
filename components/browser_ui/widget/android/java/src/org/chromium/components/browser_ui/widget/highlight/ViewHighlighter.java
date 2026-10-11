@@ -75,7 +75,7 @@ public class ViewHighlighter {
         private int mNumPulses;
         // Only valid for HighlightShape.CIRCLE.
         // Used to customize the size of pulse if needed.
-        private PulseDrawable.@Nullable Bounds mCircleRadius;
+        private @Nullable PulseDrawable Bounds mCircleRadius;
         // Only valid for HighlightShape.RECTANGLE The corner radius of rectangle in pixels. Used
         // to created a rounded rectangle.
         @Px private int mTopCornerRadius;
@@ -119,7 +119,7 @@ public class ViewHighlighter {
         }
 
         /** @return custom definition of the size of highlight's pulse or null of not set */
-        public PulseDrawable.@Nullable Bounds getCircleRadius() {
+        public @Nullable PulseDrawable Bounds getCircleRadius() {
             return mCircleRadius;
         }
 
@@ -332,7 +332,7 @@ public class ViewHighlighter {
             View view,
             int numPulses,
             boolean boundsRespectPadding,
-            PulseDrawable.@Nullable Bounds circleRadius) {
+            @Nullable PulseDrawable Bounds circleRadius) {
         PulseDrawable drawable = null;
         Context context = view.getContext();
         PulseDrawable.PulseEndAuthority pulseEndAuthority =

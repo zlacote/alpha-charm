@@ -83,7 +83,7 @@ public class ListMenuUtils {
     public static ListMenuItemAdapter createAdapter(
             ModelList listItems,
             Collection<Integer> disabledTypes,
-            ListMenu.@Nullable Delegate delegate) {
+            @Nullable ListMenu Delegate delegate) {
         ListMenuItemAdapter adapter = new ListMenuItemAdapter(listItems, disabledTypes, delegate);
 
         adapter.registerType(
@@ -199,7 +199,7 @@ public class ListMenuUtils {
 
     public static class ListMenuKeyProvider implements HierarchicalMenuKeyProvider {
         @Override
-        public WritableObjectPropertyKey<View.@Nullable OnClickListener> getClickListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View OnClickListener> getClickListenerKey() {
             return CLICK_LISTENER;
         }
 
@@ -209,7 +209,7 @@ public class ListMenuUtils {
         }
 
         @Override
-        public WritableObjectPropertyKey<View.@Nullable OnHoverListener> getHoverListenerKey() {
+        public WritableObjectPropertyKey<@Nullable View OnHoverListener> getHoverListenerKey() {
             return HOVER_LISTENER;
         }
 

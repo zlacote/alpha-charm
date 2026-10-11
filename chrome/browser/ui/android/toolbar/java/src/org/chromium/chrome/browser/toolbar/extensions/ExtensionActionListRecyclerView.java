@@ -42,7 +42,7 @@ public class ExtensionActionListRecyclerView extends RecyclerView {
 
     private @Nullable Transition mLastTransition;
 
-    private View.@Nullable OnLayoutChangeListener mLayoutChangeListener;
+    private @Nullable View OnLayoutChangeListener mLayoutChangeListener;
     private final AccelerateDecelerateInterpolator mAccelerateDecelerateInterpolator =
             new AccelerateDecelerateInterpolator();
 

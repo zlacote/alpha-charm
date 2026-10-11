@@ -93,7 +93,7 @@ public class ChromeTabModalPresenter extends TabModalPresenter
     private boolean mShouldUpdateContainerLayoutParams;
 
     /** A token held while the dialog manager is obscuring all tabs. */
-    private TabObscuringHandler.@Nullable Token mTabObscuringToken;
+    private @Nullable TabObscuringHandler Token mTabObscuringToken;
 
     private @Nullable ScrimManager mScrimManager;
     private @Nullable PropertyModel mScrimModel;

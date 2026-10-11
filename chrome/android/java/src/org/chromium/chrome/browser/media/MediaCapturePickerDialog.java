@@ -63,7 +63,7 @@ public class MediaCapturePickerDialog implements MediaCapturePickerTabObserver.D
     private final Map<Tab, TabItemState> mTabItemStateMap = new HashMap<>();
     private @Nullable TabItemState mLastSelectedTabItemState;
     private @Nullable PropertyModel mPropertyModel;
-    private MediaCapturePickerManager.@Nullable Delegate mDelegate;
+    private @Nullable MediaCapturePickerManager Delegate mDelegate;
 
     private class TabItemState {
         private final Tab mTab;

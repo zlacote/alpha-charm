@@ -35,7 +35,7 @@ public class SpareChildConnection {
 
     // The callback that should be called when the connection becomes bound. Set when the connection
     // is retrieved.
-    private ChildProcessConnection.@Nullable ServiceCallback mConnectionServiceCallback;
+    private @Nullable ChildProcessConnection ServiceCallback mConnectionServiceCallback;
 
     // The requested initial binding state passed in getConnection.
     // If the connection is not yet bound when getConnection is called, we need to update

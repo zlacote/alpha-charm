@@ -463,7 +463,7 @@ public class DefaultBrowserPromoUtils {
     }
 
     protected void fetchDefaultBrowserInfo(
-            Callback<DefaultBrowserInfo.@Nullable DefaultInfo> callback) {
+            Callback<@Nullable DefaultBrowserInfo DefaultInfo> callback) {
         // Force clear the old cached value and generate a fresh DefaultInfoTask.
         DefaultBrowserInfo.resetDefaultInfoTask();
         // Fetch the fresh info asynchronously.

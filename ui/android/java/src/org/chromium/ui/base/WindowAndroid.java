@@ -215,8 +215,8 @@ public class WindowAndroid
 
     private @Nullable View mPointerLockingView;
     private @Nullable View mPointerLockChangeView;
-    private View.@Nullable OnFocusChangeListener mPointerLockingViewFocusChangeListener;
-    private View.@Nullable OnFocusChangeListener mPointerLockingViewPrvFocusChangeListener;
+    private @Nullable View OnFocusChangeListener mPointerLockingViewFocusChangeListener;
+    private @Nullable View OnFocusChangeListener mPointerLockingViewPrvFocusChangeListener;
 
     // The information required to draw a replica of the progress bar drawn in
     // java UI in composited UI.
@@ -237,7 +237,7 @@ public class WindowAndroid
         }
     }
 
-    private ProgressBarConfig.@Nullable Provider mProgressBarConfigProvider;
+    private @Nullable ProgressBarConfig Provider mProgressBarConfigProvider;
 
     /** An interface to notify listeners of the changes in activity state. */
     public interface ActivityStateObserver {
@@ -1477,7 +1477,7 @@ public class WindowAndroid
     }
 
     @Override
-    public void onCurrentModeChanged(Display.@Nullable Mode currentMode) {
+    public void onCurrentModeChanged(@Nullable Display Mode currentMode) {
         recomputeSupportedRefreshRates();
     }
 
@@ -1796,7 +1796,7 @@ public class WindowAndroid
         return mPointerLockChangeView;
     }
 
-    View.@Nullable OnFocusChangeListener getPointerLockingViewFocusChangeListenerForTesting() {
+    @Nullable View OnFocusChangeListener getPointerLockingViewFocusChangeListenerForTesting() {
         return mPointerLockingViewFocusChangeListener;
     }
 

@@ -49,7 +49,7 @@ public class MagnifierSurfaceControl implements MagnifierWrapper {
     private int mHeightPx;
     private int mVerticalOffsetPx;
     private @Nullable SurfaceControl mSurfaceControl;
-    private SurfaceControl.@Nullable Transaction mTransaction;
+    private @Nullable SurfaceControl Transaction mTransaction;
 
     public MagnifierSurfaceControl(
             WebContentsImpl webContents,

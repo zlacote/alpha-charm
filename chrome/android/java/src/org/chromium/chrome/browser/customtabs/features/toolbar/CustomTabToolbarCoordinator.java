@@ -86,7 +86,7 @@ public class CustomTabToolbarCoordinator {
     private int mControlsHidingToken = TokenHolder.INVALID_TOKEN;
     private int mMenuButtonHideToken = TokenHolder.INVALID_TOKEN;
     private boolean mInitializedToolbarWithNative;
-    private PendingIntent.@Nullable OnFinished mButtonClickOnFinishedForTesting;
+    private @Nullable PendingIntent OnFinished mButtonClickOnFinishedForTesting;
 
     private static final String TAG = "CustomTabToolbarCoor";
 

@@ -45,7 +45,7 @@ public class ExportErrorDialogFragment extends DialogFragment {
     }
 
     // This handler is used to answer the user actions on the dialog.
-    private DialogInterface.@Nullable OnClickListener mHandler;
+    private @Nullable DialogInterface OnClickListener mHandler;
 
     /** Defines the strings to be shown. Set in {@link #initialize()}. */
     private @Nullable ErrorDialogParams mParams;

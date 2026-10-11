@@ -40,7 +40,7 @@ public class NtpThemeCollectionsAdapter extends RecyclerView.Adapter<RecyclerVie
 
     private final List<Object> mItems;
     private final @ThemeCollectionsItemType int mThemeCollectionsItemType;
-    private final View.@Nullable OnClickListener mOnClickListener;
+    private final @Nullable View OnClickListener mOnClickListener;
     private final ImageFetcher mImageFetcher;
     private @Nullable RecyclerView mRecyclerView;
     private @Nullable String mSelectedThemeCollectionId;
@@ -74,7 +74,7 @@ public class NtpThemeCollectionsAdapter extends RecyclerView.Adapter<RecyclerVie
     public NtpThemeCollectionsAdapter(
             List<?> items,
             @ThemeCollectionsItemType int themeCollectionsItemType,
-            View.@Nullable OnClickListener onClickListener,
+            @Nullable View OnClickListener onClickListener,
             ImageFetcher imageFetcher) {
         mItems = new ArrayList<>(items);
         mThemeCollectionsItemType = themeCollectionsItemType;
@@ -323,7 +323,7 @@ public class NtpThemeCollectionsAdapter extends RecyclerView.Adapter<RecyclerVie
                 @Nullable String selectedCollectionId,
                 @Nullable GURL selectedImageUrl,
                 ImageFetcher imageFetcher,
-                View.@Nullable OnClickListener onClickListener,
+                @Nullable View OnClickListener onClickListener,
                 boolean isHandlingClick) {
             switch (itemType) {
                 case THEME_COLLECTIONS_ITEM:

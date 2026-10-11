@@ -168,7 +168,7 @@ public class TabGridItemTouchHelperCallback extends TabListItemTouchHelperCallba
         }
     }
 
-    boolean isMessageType(RecyclerView.@Nullable ViewHolder viewHolder) {
+    boolean isMessageType(@Nullable RecyclerView ViewHolder viewHolder) {
         if (viewHolder == null) return false;
         @UiType int type = viewHolder.getItemViewType();
         return isMessageCard(type);
@@ -248,7 +248,7 @@ public class TabGridItemTouchHelperCallback extends TabListItemTouchHelperCallba
     }
 
     @Override
-    public void onSelectedChanged(RecyclerView.@Nullable ViewHolder viewHolder, int actionState) {
+    public void onSelectedChanged(@Nullable RecyclerView ViewHolder viewHolder, int actionState) {
         super.onSelectedChanged(viewHolder, actionState);
         @Nullable RecyclerView recyclerView = mRecyclerViewSupplier.get();
         if (isMessageType(viewHolder) || recyclerView == null) {
@@ -583,7 +583,7 @@ public class TabGridItemTouchHelperCallback extends TabListItemTouchHelperCallba
     }
 
     private boolean canDropOnArchivalMessage(
-            SimpleRecyclerViewAdapter.@Nullable ViewHolder tabToBeArchived) {
+            @Nullable SimpleRecyclerViewAdapter ViewHolder tabToBeArchived) {
         if (tabToBeArchived == null) return false;
 
         PropertyModel model = tabToBeArchived.model;
@@ -639,7 +639,7 @@ public class TabGridItemTouchHelperCallback extends TabListItemTouchHelperCallba
                 && isArchivedMessageCard(mModel.get(mPreviousArchivedMessageCardIndex).model);
     }
 
-    private boolean isArchivedMessageCard(RecyclerView.@Nullable ViewHolder cardViewHolder) {
+    private boolean isArchivedMessageCard(@Nullable RecyclerView ViewHolder cardViewHolder) {
         if (cardViewHolder instanceof SimpleRecyclerViewAdapter.ViewHolder simpleViewHolder) {
             return isArchivedMessageCard(assumeNonNull(simpleViewHolder.model));
         }

@@ -171,7 +171,7 @@ public class TabSearchOverlayCoordinator
             mChangeProcessor;
     private @Nullable LinearLayout mPanelContainer;
     private @Nullable SearchUiCoordinator mSearchUiCoordinator;
-    private ViewTreeObserver.@Nullable OnWindowFocusChangeListener mWindowFocusListener;
+    private @Nullable ViewTreeObserver OnWindowFocusChangeListener mWindowFocusListener;
     private boolean mEncounteredEmptyStateThisSession;
 
     /**
@@ -898,7 +898,7 @@ public class TabSearchOverlayCoordinator
         mSearchUiCoordinator = searchUiCoordinator;
     }
 
-    ViewTreeObserver.@Nullable OnWindowFocusChangeListener getWindowFocusListenerForTesting() {
+    @Nullable ViewTreeObserver OnWindowFocusChangeListener getWindowFocusListenerForTesting() {
         return mWindowFocusListener;
     }
 }

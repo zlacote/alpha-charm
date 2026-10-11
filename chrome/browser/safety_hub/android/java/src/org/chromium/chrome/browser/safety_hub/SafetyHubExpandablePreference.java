@@ -31,8 +31,8 @@ import org.chromium.ui.widget.CheckableImageView;
 public class SafetyHubExpandablePreference extends ChromeBasePreference {
     private @Nullable String mPrimaryButtonText;
     private @Nullable String mSecondaryButtonText;
-    private View.@Nullable OnClickListener mPrimaryButtonClickListener;
-    private View.@Nullable OnClickListener mSecondaryButtonClickListener;
+    private @Nullable View OnClickListener mPrimaryButtonClickListener;
+    private @Nullable View OnClickListener mSecondaryButtonClickListener;
     private boolean mExpanded = true;
     private @Nullable Drawable mDrawable;
     private boolean mHasProgressBar;
@@ -152,14 +152,14 @@ public class SafetyHubExpandablePreference extends ChromeBasePreference {
         }
     }
 
-    void setPrimaryButtonClickListener(View.@Nullable OnClickListener clickListener) {
+    void setPrimaryButtonClickListener(@Nullable View OnClickListener clickListener) {
         if (mPrimaryButtonClickListener != clickListener) {
             mPrimaryButtonClickListener = clickListener;
             this.notifyChanged();
         }
     }
 
-    void setSecondaryButtonClickListener(View.@Nullable OnClickListener clickListener) {
+    void setSecondaryButtonClickListener(@Nullable View OnClickListener clickListener) {
         if (mSecondaryButtonClickListener != clickListener) {
             mSecondaryButtonClickListener = clickListener;
             this.notifyChanged();
@@ -174,7 +174,7 @@ public class SafetyHubExpandablePreference extends ChromeBasePreference {
         return mSecondaryButtonText;
     }
 
-    View.@Nullable OnClickListener getPrimaryButtonClickListener() {
+    @Nullable View OnClickListener getPrimaryButtonClickListener() {
         return mPrimaryButtonClickListener;
     }
 

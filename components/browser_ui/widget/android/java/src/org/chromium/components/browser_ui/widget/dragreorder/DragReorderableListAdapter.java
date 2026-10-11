@@ -37,7 +37,7 @@ public abstract class DragReorderableListAdapter<T> extends RecyclerView.Adapter
     // keep track of the list and list managers
     protected @MonotonicNonNull ItemTouchHelper mItemTouchHelper;
 
-    private ItemTouchHelper.@Nullable Callback mTouchHelperCallback;
+    private @Nullable ItemTouchHelper Callback mTouchHelperCallback;
 
     protected List<T> mItems = Collections.emptyList();
 

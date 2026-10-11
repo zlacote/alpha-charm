@@ -90,7 +90,7 @@ public class ShareHelper extends org.chromium.components.browser_ui.share.ShareH
             ShareParams params,
             @Nullable Profile profile,
             boolean saveLastUsed,
-            ChromeCustomShareAction.@Nullable Provider customActionProvider) {
+            @Nullable ChromeCustomShareAction Provider customActionProvider) {
         assert (customActionProvider == null || isChooserActionSupported())
                 : "Custom action is not supported.";
 
@@ -261,7 +261,7 @@ public class ShareHelper extends org.chromium.components.browser_ui.share.ShareH
             WindowAndroid window,
             Intent sharingIntent,
             @Nullable TargetChosenCallback callback,
-            ChromeCustomShareAction.@Nullable Provider customActions) {
+            @Nullable ChromeCustomShareAction Provider customActions) {
         new CustomActionChosenReceiver(callback, customActions)
                 .sendChooserIntent(window, sharingIntent);
     }
@@ -298,12 +298,12 @@ public class ShareHelper extends org.chromium.components.browser_ui.share.ShareH
 
     /** Helper class for injecting extras into the sharing intents. */
     private static class CustomActionChosenReceiver extends TargetChosenReceiver {
-        private final ChromeCustomShareAction.@Nullable Provider mCustomActionProvider;
+        private final @Nullable ChromeCustomShareAction Provider mCustomActionProvider;
         private final Map<String, Runnable> mActionsMap = new HashMap<>();
 
         protected CustomActionChosenReceiver(
                 @Nullable TargetChosenCallback callback,
-                ChromeCustomShareAction.@Nullable Provider customActionProvider) {
+                @Nullable ChromeCustomShareAction Provider customActionProvider) {
             super(callback);
             mCustomActionProvider = customActionProvider;
         }

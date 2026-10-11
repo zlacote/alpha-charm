@@ -26,7 +26,7 @@ public class MemoryInfoBridge {
      * throttling handling code there would become incorrect otherwise.
      */
     @CalledByNative
-    public static Debug.@Nullable MemoryInfo getActivityManagerMemoryInfoForSelf() {
+    public static @Nullable Debug MemoryInfo getActivityManagerMemoryInfoForSelf() {
         ActivityManager activityManager =
                 (ActivityManager)
                         ContextUtils.getApplicationContext()

@@ -114,7 +114,7 @@ public class SafetyHubCompromisedPasswordsModuleHelper implements SafetyHubModul
     }
 
     @Override
-    public View.@Nullable OnClickListener getSecondaryButtonListener() {
+    public @Nullable View OnClickListener getSecondaryButtonListener() {
         if (mUnifiedModule
                 && !(mAccountCompromisedPasswordsCount > 0
                         && mLocalCompromisedPasswordsCount > 0)) {

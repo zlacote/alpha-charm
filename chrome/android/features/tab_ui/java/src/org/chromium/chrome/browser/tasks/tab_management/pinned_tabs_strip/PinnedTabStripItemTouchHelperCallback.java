@@ -139,7 +139,7 @@ public class PinnedTabStripItemTouchHelperCallback extends ItemTouchHelper2.Simp
     public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {}
 
     @Override
-    public void onSelectedChanged(RecyclerView.@Nullable ViewHolder viewHolder, int actionState) {
+    public void onSelectedChanged(@Nullable RecyclerView ViewHolder viewHolder, int actionState) {
         super.onSelectedChanged(viewHolder, actionState);
 
         int position =

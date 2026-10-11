@@ -342,7 +342,7 @@ public abstract class MultiInstanceManager {
 
     public abstract void setCurrentDisplayIdForTesting(int displayId);
 
-    public abstract DisplayManager.@Nullable DisplayListener getDisplayListenerForTesting();
+    public abstract @Nullable DisplayManager DisplayListener getDisplayListenerForTesting();
 
     @VisibleForTesting
     public static void setTestDisplayIds(List<Integer> testDisplayIds) {

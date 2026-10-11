@@ -39,7 +39,7 @@ public interface ImeAdapter {
     static InputMethodManagerWrapper createDefaultInputMethodManagerWrapper(
             Context context,
             WindowAndroid windowAndroid,
-            InputMethodManagerWrapper.@Nullable Delegate delegate) {
+            @Nullable InputMethodManagerWrapper Delegate delegate) {
         return ImeAdapterImpl.createDefaultInputMethodManagerWrapper(
                 context, windowAndroid, delegate);
     }

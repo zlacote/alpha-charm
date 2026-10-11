@@ -28,7 +28,7 @@ import java.util.Objects;
  */
 @NullMarked
 public class SelectionMenuCachedResult {
-    private final SelectionClient.@Nullable Result mClassificationResult;
+    private final @Nullable SelectionClient Result mClassificationResult;
     private final boolean mIsSelectionPassword;
     private final boolean mIsSelectionReadOnly;
     private final String mSelectedText;
@@ -38,7 +38,7 @@ public class SelectionMenuCachedResult {
     private final boolean mHasClipboardItemToPaste;
 
     public SelectionMenuCachedResult(
-            SelectionClient.@Nullable Result classificationResult,
+            @Nullable SelectionClient Result classificationResult,
             boolean isSelectionPassword,
             boolean isSelectionReadOnly,
             String selectedText,
@@ -72,7 +72,7 @@ public class SelectionMenuCachedResult {
                 && mMenuType == menuType;
     }
 
-    SelectionClient.@Nullable Result getClassificationResult() {
+    @Nullable SelectionClient Result getClassificationResult() {
         return mClassificationResult;
     }
 
@@ -89,7 +89,7 @@ public class SelectionMenuCachedResult {
      * @return true if params are equivalent otherwise false.
      */
     public boolean canReuseResult(
-            SelectionClient.@Nullable Result classificationResult,
+            @Nullable SelectionClient Result classificationResult,
             boolean isSelectionPassword,
             boolean isSelectionReadOnly,
             String selectedText,

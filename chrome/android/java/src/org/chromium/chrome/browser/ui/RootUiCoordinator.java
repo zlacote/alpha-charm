@@ -396,7 +396,7 @@ public class RootUiCoordinator
     private @Nullable BottomSheetObserver mBottomSheetObserver;
     protected final CallbackController mCallbackController;
     protected final BrowserControlsManager mBrowserControlsManager;
-    private BrowserControlsStateProvider.@Nullable Observer mBrowserControlsObserver;
+    private @Nullable BrowserControlsStateProvider Observer mBrowserControlsObserver;
     protected final MonotonicObservableSupplier<TabModelSelector> mTabModelSelectorSupplier;
     protected final OneshotSupplier<TabSwitcher> mTabSwitcherSupplier;
     protected final OneshotSupplier<TabSwitcher> mIncognitoTabSwitcherSupplier;
@@ -407,7 +407,7 @@ public class RootUiCoordinator
     private @Nullable LayoutManagerImpl mLayoutManager;
     protected OneshotSupplier<ToolbarIntentMetadata> mIntentMetadataOneshotSupplier;
     protected OneshotSupplierImpl<Boolean> mPromoShownOneshotSupplier = new OneshotSupplierImpl<>();
-    private VoiceRecognitionHandler.@Nullable Observer mMicStateObserver;
+    private @Nullable VoiceRecognitionHandler Observer mMicStateObserver;
     private @Nullable MediaCaptureOverlayController mCaptureController;
     private @Nullable ScrollCaptureManager mScrollCaptureManager;
     private @Nullable HandoffController mHandoffController;

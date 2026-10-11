@@ -328,7 +328,7 @@ public class NtpCustomizationMediator implements TemplateUrlServiceObserver {
             }
 
             @Override
-            public View.@Nullable OnClickListener getListener(int type) {
+            public @Nullable View OnClickListener getListener(int type) {
                 return mTypeToListenersMap.get(type);
             }
 

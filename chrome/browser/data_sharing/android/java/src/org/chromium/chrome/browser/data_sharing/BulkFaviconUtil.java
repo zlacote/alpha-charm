@@ -53,7 +53,7 @@ class BulkFaviconUtil {
     }
 
     private @Nullable FaviconHelper mFaviconHelper;
-    private FaviconHelper.@Nullable DefaultFaviconHelper mDefaultFaviconHelper;
+    private @Nullable FaviconHelper DefaultFaviconHelper mDefaultFaviconHelper;
     private @Nullable RoundedIconGenerator mRoundedIconGenerator;
 
     BulkFaviconUtil() {}

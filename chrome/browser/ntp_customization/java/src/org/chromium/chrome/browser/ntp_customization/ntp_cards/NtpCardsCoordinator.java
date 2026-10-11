@@ -30,7 +30,7 @@ import java.util.function.Supplier;
 /** Coordinator for the NTP cards bottom sheet. */
 @NullMarked
 public class NtpCardsCoordinator {
-    private final HomeModulesConfigManager.@Nullable HomeModulesStateListener
+    private final @Nullable HomeModulesConfigManager HomeModulesStateListener
             mHomeModulesStateListener;
     private final View mView;
     private NtpCardsMediator mMediator;

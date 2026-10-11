@@ -19,7 +19,7 @@ class NoPasskeysBottomSheetMediator implements NoPasskeysBottomSheetContent.Dele
     private final WeakReference<BottomSheetController> mBottomSheetController;
 
     private @Nullable BottomSheetContent mBottomSheetContent;
-    private NoPasskeysBottomSheetCoordinator.@Nullable NativeDelegate mNativeDelegate;
+    private @Nullable NoPasskeysBottomSheetCoordinator NativeDelegate mNativeDelegate;
 
     /**
      * Creates the mediator.

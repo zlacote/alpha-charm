@@ -57,7 +57,7 @@ public class SafetyHubFetchService implements SigninManager.SignInStateObserver,
      * The current state of updates for Chrome. This can change during runtime and may be {@code
      * null} if the status hasn't been determined yet.
      */
-    private UpdateStatusProvider.@Nullable UpdateStatus mUpdateStatus;
+    private @Nullable UpdateStatusProvider UpdateStatus mUpdateStatus;
 
     private final ObserverList<Observer> mObservers = new ObserverList<>();
     private final @Nullable SigninManager mSigninManager;
@@ -298,7 +298,7 @@ public class SafetyHubFetchService implements SigninManager.SignInStateObserver,
     /**
      * @return The last fetched update status from Omaha if available.
      */
-    public UpdateStatusProvider.@Nullable UpdateStatus getUpdateStatus() {
+    public @Nullable UpdateStatusProvider UpdateStatus getUpdateStatus() {
         return mUpdateStatus;
     }
 

@@ -90,7 +90,7 @@ public final class Fido2ApiCall extends GoogleApi<ApiOptions.NoOptions> {
         public final int mRegisterMethodId;
         public final int mSignMethodId;
         public final int mIsUserVerifyingPlatformAuthenticatorAvailableMethodId;
-        public final Fido2Api.@Nullable Calls mMethodInterfaces;
+        public final @Nullable Fido2Api Calls mMethodInterfaces;
 
         Fido2ApiCallParams(
                 Api<ApiOptions.NoOptions> api,
@@ -99,7 +99,7 @@ public final class Fido2ApiCall extends GoogleApi<ApiOptions.NoOptions> {
                 int registerMethodId,
                 int signMethodId,
                 int isUserVerifyingPlatformAuthenticatorAvailableMethodId,
-                Fido2Api.@Nullable Calls methodInterfaces) {
+                @Nullable Fido2Api Calls methodInterfaces) {
             mApi = api;
             mDescriptor = descriptor;
             mCallbackDescriptor = callbackDescriptor;

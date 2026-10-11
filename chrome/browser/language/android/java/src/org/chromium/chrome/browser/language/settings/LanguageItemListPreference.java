@@ -29,7 +29,7 @@ public class LanguageItemListPreference extends ChromeBasePreference
     // Default number of items to list in a collection preference summary.
     private static final int COLLECTION_SUMMARY_ITEM_LIMIT = 3;
 
-    private LanguageItemListFragment.@Nullable ListDelegate mLanguageItemListDelegate;
+    private @Nullable LanguageItemListFragment ListDelegate mLanguageItemListDelegate;
 
     public LanguageItemListPreference(Context context, AttributeSet attrs) {
         super(context, attrs);

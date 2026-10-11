@@ -76,7 +76,7 @@ class MenuButtonMediator implements AppMenuObserver {
     private final Supplier<@Nullable MenuButtonState> mMenuButtonStateSupplier;
     private final Runnable mOnMenuButtonClicked;
     private final TokenHolder mHideTokenHolder;
-    private final MenuButtonCoordinator.@Nullable VisibilityDelegate mVisibilityDelegate;
+    private final @Nullable MenuButtonCoordinator VisibilityDelegate mVisibilityDelegate;
 
     private final int mUrlFocusTranslationX;
     private final ThemeColorProvider mThemeColorProvider;
@@ -115,7 +115,7 @@ class MenuButtonMediator implements AppMenuObserver {
             WindowAndroid windowAndroid,
             Supplier<@Nullable MenuButtonState> menuButtonStateSupplier,
             Runnable onMenuButtonClicked,
-            MenuButtonCoordinator.@Nullable VisibilityDelegate visibilityDelegate,
+            @Nullable MenuButtonCoordinator VisibilityDelegate visibilityDelegate,
             ThemeColorProvider themeColorProvider,
             boolean isWebApp) {
         mPropertyModel = propertyModel;

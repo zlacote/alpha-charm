@@ -68,7 +68,7 @@ public class PriceTrackingActionProvider implements ContextualPageActionControll
             return;
         }
 
-        Callback<ShoppingService.@Nullable ProductInfo> cancelableCallback =
+        Callback<@Nullable ShoppingService ProductInfo> cancelableCallback =
                 mCallbackController.makeCancelable(
                         (info) -> {
                             boolean canTrackPrice = info != null && info.productClusterId != null;

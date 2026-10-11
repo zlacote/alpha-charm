@@ -94,7 +94,7 @@ public class LogoMediator implements TemplateUrlServiceObserver {
     private @Nullable ImageFetcher mImageFetcher;
     private final Callback<LoadUrlParams> mLogoClickedCallback;
     private boolean mHasLogoLoadedForCurrentSearchEngine;
-    private final LogoCoordinator.@Nullable VisibilityObserver mVisibilityObserver;
+    private final @Nullable LogoCoordinator VisibilityObserver mVisibilityObserver;
     private @Nullable Drawable mDefaultGoogleLogoDrawable;
     private boolean mShouldShowLogo;
     private boolean mIsDefaultSearchEngineGoogle;

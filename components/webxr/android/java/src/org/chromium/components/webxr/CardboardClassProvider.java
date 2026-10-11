@@ -17,7 +17,7 @@ import org.chromium.build.annotations.Nullable;
  */
 @NullMarked
 /*package*/ class CardboardClassProvider {
-    /*package*/ static XrImmersiveOverlay.@Nullable Delegate getOverlayDelegate(
+    /*package*/ static @Nullable XrImmersiveOverlay Delegate getOverlayDelegate(
             VrCompositorDelegate compositorDelegate, Activity activity) {
         return new CardboardOverlayDelegate(compositorDelegate, activity);
     }

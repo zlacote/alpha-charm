@@ -52,7 +52,7 @@ public class MismatchNotificationChecker
     private final CallbackController mCallbackController = new CallbackController();
 
     /** Used to suppress IPH UIs while the mismatch notification UI is on the screen. */
-    private Tracker.@Nullable DisplayLockHandle mFeatureEngagementLock;
+    private @Nullable Tracker DisplayLockHandle mFeatureEngagementLock;
 
     /**
      * Whether the other prompt UIs should be suppressed. This var is set to {@code true} while the

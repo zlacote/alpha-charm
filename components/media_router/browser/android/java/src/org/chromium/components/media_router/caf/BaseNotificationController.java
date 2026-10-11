@@ -27,7 +27,7 @@ import org.chromium.services.media_session.MediaMetadata;
 @NullMarked
 public abstract class BaseNotificationController
         implements MediaNotificationListener, BaseSessionController.Callback {
-    private MediaNotificationInfo.@Nullable Builder mNotificationBuilder;
+    private @Nullable MediaNotificationInfo Builder mNotificationBuilder;
     private final BaseSessionController mSessionController;
 
     public BaseNotificationController(BaseSessionController sessionController) {

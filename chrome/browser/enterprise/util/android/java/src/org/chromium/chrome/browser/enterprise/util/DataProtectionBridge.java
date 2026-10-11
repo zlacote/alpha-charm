@@ -24,7 +24,7 @@ import org.chromium.content_public.browser.WebContents;
 /** Provides access to the enterprise data protection utility methods. */
 @NullMarked
 public class DataProtectionBridge {
-    private static DataProtectionBridge.@Nullable Natives sNativesForTesting;
+    private static @Nullable DataProtectionBridge Natives sNativesForTesting;
 
     /**
      * Runs the provided callback after verifying that copying the specified text is allowed by the

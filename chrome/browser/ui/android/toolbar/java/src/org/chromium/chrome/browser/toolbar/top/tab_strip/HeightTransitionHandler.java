@@ -57,7 +57,7 @@ class HeightTransitionHandler {
 
     private int mTabObscureToken = TokenHolder.INVALID_TOKEN;
     private final TabObscuringHandler mTabObscuringHandler;
-    private TabObscuringHandler.@Nullable Observer mTabObscuringHandlerObserver;
+    private @Nullable TabObscuringHandler Observer mTabObscuringHandlerObserver;
 
     private final OneshotSupplier<TabStripTransitionDelegate> mTabStripTransitionDelegateSupplier;
 

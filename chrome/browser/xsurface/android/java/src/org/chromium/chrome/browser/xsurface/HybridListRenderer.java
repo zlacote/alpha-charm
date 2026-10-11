@@ -117,7 +117,7 @@ public interface HybridListRenderer {
      * RecyclerView, which may be null before attach and after detach, this is guaranteed to be
      * valid between the call to bind() and unbind().
      */
-    default RecyclerView.@Nullable Adapter<?> getAdapter() {
+    default @Nullable RecyclerView Adapter<?> getAdapter() {
         return null;
     }
 }

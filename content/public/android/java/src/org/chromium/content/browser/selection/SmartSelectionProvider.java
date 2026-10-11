@@ -317,7 +317,7 @@ public class SmartSelectionProvider {
         }
 
         @Override
-        protected void onCancelled(SelectionClient.@Nullable Result result) {
+        protected void onCancelled(@Nullable SelectionClient Result result) {
             if (result != null) {
                 mResultCallback.onClassifiedLate(result);
             }

@@ -32,7 +32,7 @@ import org.chromium.build.annotations.Nullable;
 @NullMarked
 public class ChromeButtonPreference extends ChromeBasePreference {
     /** The onClick listener to handle click events for the Button widget. */
-    private View.@Nullable OnClickListener mListener;
+    private @Nullable View OnClickListener mListener;
 
     /** The text to use for the Button widget source. */
     private @Nullable CharSequence mText;
@@ -90,7 +90,7 @@ public class ChromeButtonPreference extends ChromeBasePreference {
     public void setButton(
             @Nullable CharSequence text,
             @Nullable CharSequence contentDescription,
-            View.@Nullable OnClickListener listener) {
+            @Nullable View OnClickListener listener) {
         mText = text;
         mContentDescription = contentDescription;
         mListener = listener;
@@ -106,7 +106,7 @@ public class ChromeButtonPreference extends ChromeBasePreference {
     public void setButton(
             @StringRes int textRes,
             @StringRes int contentDescriptionRes,
-            View.@Nullable OnClickListener listener) {
+            @Nullable View OnClickListener listener) {
         setButton(
                 (textRes != 0) ? getContext().getString(textRes) : null,
                 (contentDescriptionRes != 0) ? getContext().getString(contentDescriptionRes) : null,

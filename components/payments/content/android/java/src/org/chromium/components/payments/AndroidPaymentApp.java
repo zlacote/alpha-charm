@@ -69,7 +69,7 @@ public class AndroidPaymentApp extends PaymentApp
     private boolean mHasEnrolledInstrumentResult;
 
     // Set inside launchPaymentApp and used to validate the received response.
-    private WebPaymentIntentHelperType.@Nullable PaymentOptions mPaymentOptions;
+    private @Nullable WebPaymentIntentHelperType PaymentOptions mPaymentOptions;
 
     /**
      * Builds the point of interaction with a locally installed 3rd party native Android payment

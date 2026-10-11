@@ -64,7 +64,7 @@ public class BitmapCache {
      * Discardable reference to the {@link RecentlyUsedCache} that can be dropped under memory
      * pressure.
      */
-    private DiscardableReferencePool.@Nullable DiscardableReference<RecentlyUsedCache> mBitmapCache;
+    private @Nullable DiscardableReferencePool DiscardableReference<RecentlyUsedCache> mBitmapCache;
 
     /**
      * The reference pool that contains the {@link #mBitmapCache}. Used to recreate a new cache

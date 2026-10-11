@@ -67,7 +67,7 @@ public class HomeModulesCoordinator implements ModuleDelegate, OnViewCreatedCall
 
     private @Nullable Callback<Profile> mOnProfileAvailableObserver;
     private boolean mHasHomeModulesBeenScrolled;
-    private RecyclerView.@Nullable OnScrollListener mOnScrollListener;
+    private @Nullable RecyclerView OnScrollListener mOnScrollListener;
     private CallbackController mCallbackController;
 
     /**

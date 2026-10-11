@@ -377,7 +377,7 @@ public class CustomTabIntentDataProvider extends BrowserServicesIntentDataProvid
     private final int @Nullable [] mClickableViewIds;
     private final @Nullable PendingIntent mRemoteViewsPendingIntent;
     private final @Nullable PendingIntent mSecondaryToolbarSwipeUpPendingIntent;
-    private PendingIntent.@Nullable OnFinished mOnFinishedForTesting;
+    private @Nullable PendingIntent OnFinished mOnFinishedForTesting;
     private @DisplayMode.EnumType int mResolvedDisplayMode = DisplayMode.UNDEFINED;
     private final @OpenInBrowserState int mOpenInBrowserState;
     private final int mShareState;

@@ -853,7 +853,7 @@ public class TabSwitcherPaneCoordinator implements BackPressHandler {
     }
 
     /** Returns a {@link TabSwitcherCustomViewManager.Delegate} for supplying custom views. */
-    public TabSwitcherCustomViewManager.@Nullable Delegate
+    public @Nullable TabSwitcherCustomViewManager Delegate
             getTabSwitcherCustomViewManagerDelegate() {
         return mMediator;
     }

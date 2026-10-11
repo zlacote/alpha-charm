@@ -25,7 +25,7 @@ public class CreateRouteRequestInfo {
     public final int tabId;
     public final boolean isOffTheRecord;
     public final int nativeRequestId;
-    public final MediaRouter.@Nullable RouteInfo routeInfo;
+    public final @Nullable MediaRouter RouteInfo routeInfo;
 
     public CreateRouteRequestInfo(
             MediaSource source,
@@ -35,7 +35,7 @@ public class CreateRouteRequestInfo {
             int tabId,
             boolean isOffTheRecord,
             int nativeRequestId,
-            MediaRouter.@Nullable RouteInfo routeInfo) {
+            @Nullable MediaRouter RouteInfo routeInfo) {
         this.routeId = new MediaRoute(sink.getId(), source.getSourceId(), presentationId).id;
         this.mSource = source;
         this.sink = sink;

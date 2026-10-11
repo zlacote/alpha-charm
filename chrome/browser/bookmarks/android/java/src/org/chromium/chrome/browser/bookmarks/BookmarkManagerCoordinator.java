@@ -664,12 +664,12 @@ public class BookmarkManagerCoordinator
             }
 
             @Override
-            public RecyclerView.@Nullable ViewHolder getBookmarkViewHolderByPosition(int position) {
+            public @Nullable RecyclerView ViewHolder getBookmarkViewHolderByPosition(int position) {
                 return getViewHolderByPosition(getBookmarkStartIndex() + position);
             }
 
             @Override
-            public RecyclerView.@Nullable ViewHolder getViewHolderByPosition(int position) {
+            public @Nullable RecyclerView ViewHolder getViewHolderByPosition(int position) {
                 return mRecyclerView.findViewHolderForAdapterPosition(position);
             }
 

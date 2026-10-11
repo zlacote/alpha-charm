@@ -120,7 +120,7 @@ public class KeyboardAccessoryCoordinator implements KeyboardAccessoryVisualStat
          *
          * @return The active {@link KeyboardAccessoryData.Tab}, null otherwise.
          */
-        KeyboardAccessoryData.@Nullable Tab getActiveTab();
+        @Nullable KeyboardAccessoryData Tab getActiveTab();
 
         /**
          * Returns whether the model holds any tabs.

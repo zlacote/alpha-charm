@@ -236,7 +236,7 @@ public class DigitalCredentialsCreationDelegate {
 
     private static void handleCreateCredentialException(
             int resultCode,
-            androidx.credentials.exceptions.@Nullable CreateCredentialException exception,
+            @Nullable androidx.credentials.exceptions.CreateCredentialException exception,
             Promise<DigitalCredential> result) {
         if (exception != null) {
             result.reject(exception);

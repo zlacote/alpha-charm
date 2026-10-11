@@ -200,7 +200,7 @@ public class NewTabPage
     private final boolean mIsInNightMode;
     private final boolean mSupportsEnableEdgeToEdgeOnTop;
     private final TopInsetProvider mTopInsetProvider;
-    private TopInsetProvider.@Nullable Observer mTopInsetChangeObserver;
+    private @Nullable TopInsetProvider Observer mTopInsetChangeObserver;
     private boolean mIsUseEdgeToEdgeForCustomizedTheme;
 
     private @Nullable HomepageStateListener mHomepageStateListener;
@@ -211,7 +211,7 @@ public class NewTabPage
 
     private @Nullable NtpSmoothTransitionDelegate mSmoothTransitionDelegate;
 
-    private RecyclerView.@Nullable OnScrollListener mNtpScrollListener;
+    private @Nullable RecyclerView OnScrollListener mNtpScrollListener;
 
     private final CallbackController mCallbackController = new CallbackController();
 
@@ -1311,7 +1311,7 @@ public class NewTabPage
         return mNewTabPageManager;
     }
 
-    public RecyclerView.@Nullable OnScrollListener getScrollListenerForTesting() {
+    public @Nullable RecyclerView OnScrollListener getScrollListenerForTesting() {
         return mNtpScrollListener;
     }
 

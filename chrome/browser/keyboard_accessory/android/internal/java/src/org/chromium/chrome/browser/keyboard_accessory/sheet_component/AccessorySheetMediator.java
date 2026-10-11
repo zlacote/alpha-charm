@@ -75,7 +75,7 @@ class AccessorySheetMediator implements PropertyObservable.PropertyObserver<Prop
         mModel.set(SHOW_KEYBOARD_CALLBACK, this::onKeyboardRequested);
     }
 
-    KeyboardAccessoryData.@Nullable Tab getTab() {
+    @Nullable KeyboardAccessoryData Tab getTab() {
         if (mModel.get(ACTIVE_TAB_INDEX) == NO_ACTIVE_TAB) return null;
         return mModel.get(TABS).get(mModel.get(ACTIVE_TAB_INDEX));
     }

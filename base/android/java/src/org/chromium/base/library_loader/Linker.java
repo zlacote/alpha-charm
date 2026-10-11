@@ -96,9 +96,7 @@ class Linker {
     protected @Nullable LibInfo mLocalLibInfo;
 
     // The library info that was transferred from another process. Only useful if it contains RELRO
-    // FD.
-    @GuardedBy("mLock")
-    private @Nullable LibInfo mRemoteLibInfo;
+    // @GuardedBy("mLock") FD private @Nullable LibInfo mRemoteLibInfo;
 
     // Whether this Linker instance should potentially create the RELRO region. Even if true, the
     // library loading can fall back to the system linker without producing the region. The default
@@ -776,7 +774,7 @@ class Linker {
         int getRelroSharingResult();
     }
 
-    private static Linker.@Nullable Natives sNativesInstance;
+    private static @Nullable Linker Natives sNativesInstance;
 
     static void setLinkerNativesForTesting(Natives instance) {
         sNativesInstance = instance;

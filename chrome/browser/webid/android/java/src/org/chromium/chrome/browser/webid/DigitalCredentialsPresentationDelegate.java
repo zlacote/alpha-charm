@@ -300,7 +300,7 @@ public class DigitalCredentialsPresentationDelegate {
 
     private static void handleGetCredentialException(
             int resultCode,
-            androidx.credentials.exceptions.@Nullable GetCredentialException exception,
+            @Nullable androidx.credentials.exceptions.GetCredentialException exception,
             Promise<DigitalCredential> result) {
         if (exception != null) {
             result.reject(exception);

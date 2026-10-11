@@ -178,7 +178,7 @@ public class LocationBarCoordinator
     private boolean mDestroyed;
     private @Nullable OptionalButtonCoordinator mOptionalButtonCoordinator;
     private @Nullable ButtonData mOptionalButtonData;
-    private LocationBarDataProvider.@Nullable Observer mOptionalButtonLocationBarDataObserver;
+    private @Nullable LocationBarDataProvider Observer mOptionalButtonLocationBarDataObserver;
     private @Nullable UrlFocusChangeListener mOptionalButtonUrlFocusChangeListener;
     private final SettableNonNullObservableSupplier<Boolean> mSuggestionsListNonEmptySupplier =
             ObservableSuppliers.createNonNull(false);
@@ -251,7 +251,7 @@ public class LocationBarCoordinator
             View autocompleteAnchorView,
             MonotonicObservableSupplier<Profile> profileObservableSupplier,
             LocationBarDataProvider locationBarDataProvider,
-            ActionMode.@Nullable Callback actionModeCallback,
+            @Nullable ActionMode Callback actionModeCallback,
             WindowAndroid windowAndroid,
             NullableObservableSupplier<Tab> activityTabSupplier,
             Supplier<@Nullable ModalDialogManager> modalDialogManagerSupplier,

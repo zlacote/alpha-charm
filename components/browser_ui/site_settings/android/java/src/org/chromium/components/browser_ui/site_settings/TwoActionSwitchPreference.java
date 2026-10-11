@@ -17,7 +17,7 @@ import org.chromium.components.browser_ui.settings.ChromeSwitchPreference;
 /** A 2-action switch Preference used for location permission in SiteSettings. */
 @NullMarked
 public class TwoActionSwitchPreference extends ChromeSwitchPreference {
-    private View.@Nullable OnClickListener mPrimaryButtonClickListener;
+    private @Nullable View OnClickListener mPrimaryButtonClickListener;
 
     public TwoActionSwitchPreference(Context context) {
         this(context, null);
@@ -49,7 +49,7 @@ public class TwoActionSwitchPreference extends ChromeSwitchPreference {
     }
 
     /** Sets the primary click listener for the left hand side of the preference. */
-    public void setPrimaryButtonClickListener(View.@Nullable OnClickListener clickListener) {
+    public void setPrimaryButtonClickListener(@Nullable View OnClickListener clickListener) {
         if (mPrimaryButtonClickListener != clickListener) {
             mPrimaryButtonClickListener = clickListener;
             this.notifyChanged();

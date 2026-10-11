@@ -62,7 +62,7 @@ public class DisplayAndroid {
          *
          * @param currentMode the current display mode.
          */
-        default void onCurrentModeChanged(Display.@Nullable Mode currentMode) {}
+        default void onCurrentModeChanged(@Nullable Display Mode currentMode) {}
 
         default void onAdaptiveRefreshRateInfoChanged(AdaptiveRefreshRateInfo arrInfo) {}
     }
@@ -119,7 +119,7 @@ public class DisplayAndroid {
     private int mBitsPerComponent;
     private int mRotation;
     private float mRefreshRate;
-    private Display.@Nullable Mode mCurrentDisplayMode;
+    private @Nullable Display Mode mCurrentDisplayMode;
     private @Nullable List<Display.Mode> mDisplayModes;
     private boolean mIsHdr;
     private float mHdrMaxLuminanceRatio = 1.0f;
@@ -287,7 +287,7 @@ public class DisplayAndroid {
     }
 
     /** Returns current Display.Mode for the display. */
-    public Display.@Nullable Mode getCurrentMode() {
+    public @Nullable Display Mode getCurrentMode() {
         return mCurrentDisplayMode;
     }
 
@@ -399,7 +399,7 @@ public class DisplayAndroid {
             @Nullable Boolean isDisplayWideColorGamut,
             @Nullable Boolean isDisplayServerWideColorGamut,
             @Nullable Float refreshRate,
-            Display.@Nullable Mode currentMode,
+            @Nullable Display Mode currentMode,
             @Nullable List<Display.Mode> supportedModes,
             @Nullable Boolean isHdr,
             @Nullable Float hdrMaxLuminanceRatio,

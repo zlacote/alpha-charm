@@ -154,7 +154,7 @@ public class SafetyHubSafeBrowsingModuleMediator implements SafetyHubModuleMedia
         return null;
     }
 
-    private View.@Nullable OnClickListener getPrimaryButtonListener() {
+    private @Nullable View OnClickListener getPrimaryButtonListener() {
         if (mSafeBrowsingState == SafeBrowsingState.NO_SAFE_BROWSING && !isManaged()) {
             return v -> {
                 mDelegate.startSettingsForModule(SafeBrowsingSettingsFragment.class);
@@ -175,7 +175,7 @@ public class SafetyHubSafeBrowsingModuleMediator implements SafetyHubModuleMedia
                 .getString(R.string.safety_hub_go_to_security_settings_button);
     }
 
-    private View.@Nullable OnClickListener getSecondaryButtonListener() {
+    private @Nullable View OnClickListener getSecondaryButtonListener() {
         if (mSafeBrowsingState == SafeBrowsingState.NO_SAFE_BROWSING || isManaged()) {
             return null;
         }
