@@ -65,7 +65,7 @@ public class SafetyHubNoCompromisedPasswordsModuleHelper implements SafetyHubMod
     }
 
     @Override
-    public @Nullable View.OnClickListener getPrimaryButtonListener() {
+    public View.@Nullable OnClickListener getPrimaryButtonListener() {
         return null;
     }
 

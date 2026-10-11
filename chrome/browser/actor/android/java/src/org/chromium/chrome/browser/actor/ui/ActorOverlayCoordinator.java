@@ -60,7 +60,7 @@ public class ActorOverlayCoordinator {
     private @Nullable PropertyModelChangeProcessor mChangeProcessor;
     private @Nullable SideUiObserver mSideUiObserver;
     private @Nullable ActorKeyedService mActorKeyedService;
-    private @Nullable ActorKeyedService.Observer mActorObserver;
+    private ActorKeyedService.@Nullable Observer mActorObserver;
 
     /**
      * Constructs the Coordinator.

@@ -144,7 +144,7 @@ public class BookmarkPopupView extends ConstraintLayout {
 
     /** Sets the change listener for the price tracking switch. */
     public void setPriceTrackingSwitchListener(
-            @Nullable CompoundButton.OnCheckedChangeListener listener) {
+            CompoundButton.@Nullable OnCheckedChangeListener listener) {
         mPriceTrackingSwitch.setOnCheckedChangeListener(listener);
     }
 

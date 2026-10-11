@@ -294,7 +294,7 @@ public abstract class PickerAdapter extends Adapter<RecyclerView.ViewHolder>
     @Override
     // onCreateViewHolder() should not return null, but this implementation does for some ViewTypes.
     @NullUnmarked
-    public @Nullable RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public RecyclerView.@Nullable ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         switch (viewType) {
             case ViewType.SELECT_ALL_CHECKBOX:
                 mTopView =

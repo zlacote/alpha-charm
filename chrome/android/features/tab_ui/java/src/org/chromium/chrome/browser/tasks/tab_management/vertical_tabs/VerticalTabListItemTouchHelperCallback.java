@@ -92,7 +92,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
     private int mDragStartTabModelIndex = TabModel.INVALID_TAB_INDEX;
     private @Nullable Token mDragStartGroupId;
     private boolean mIsOSNewWindowDrop;
-    private @Nullable RecyclerView.ViewHolder mSelectedViewHolder;
+    private RecyclerView.@Nullable ViewHolder mSelectedViewHolder;
     private @Nullable OnDragOutListener mOnDragOutListener;
     private int mUndoBarThrottleToken = TokenHolder.INVALID_TOKEN;
     private float mDragStartX;
@@ -269,7 +269,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
     }
 
     @Override
-    public @Nullable RecyclerView.ViewHolder chooseDropTarget(
+    public RecyclerView.@Nullable ViewHolder chooseDropTarget(
             RecyclerView.ViewHolder selected,
             List<RecyclerView.ViewHolder> dropTargets,
             int curX,
@@ -547,7 +547,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
      * Updates the visual state and tab model selection.
      */
     @Override
-    public void onSelectedChanged(@Nullable RecyclerView.ViewHolder viewHolder, int actionState) {
+    public void onSelectedChanged(RecyclerView.@Nullable ViewHolder viewHolder, int actionState) {
         super.onSelectedChanged(viewHolder, actionState);
 
         if (mTabGridItemLongPressOrchestrator != null
@@ -637,7 +637,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
 
     @Override
     public void setOnLongPressTabItemEventListener(
-            @Nullable TabGridItemLongPressOrchestrator.OnLongPressTabItemEventListener listener) {
+            TabGridItemLongPressOrchestrator.@Nullable OnLongPressTabItemEventListener listener) {
         if (listener != null) {
             // Use 10ms so that the context menu appears almost immediately after the ~500ms
             // long-press.
@@ -870,7 +870,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
     }
 
     @Override
-    public @Nullable RecyclerView.ViewHolder findLiveViewHolder(
+    public RecyclerView.@Nullable ViewHolder findLiveViewHolder(
             RecyclerView recyclerView, RecyclerView.ViewHolder current) {
         if (current == null || !hasTabPropertiesModel(current)) return null;
         int currentTabId = getTabId(current);
@@ -950,7 +950,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
     }
 
     private @Nullable CollapsedItemState mCollapsedItemState;
-    private @Nullable RecyclerView.ViewHolder mCollapsedViewHolder;
+    private RecyclerView.@Nullable ViewHolder mCollapsedViewHolder;
     private int mDraggedTabId = Tab.INVALID_TAB_ID;
     private @Nullable Token mDraggedGroupId;
     private boolean mIsDraggedGroupHeader;
@@ -974,7 +974,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
                 }
             };
 
-    private @Nullable RecyclerView.ViewHolder getLiveViewHolder() {
+    private RecyclerView.@Nullable ViewHolder getLiveViewHolder() {
         if (mCollapsedViewHolder != null) {
             boolean isStillValid = mCollapsedViewHolder.getItemViewType() == mDraggedItemViewType;
             if (isStillValid && hasTabPropertiesModel(mCollapsedViewHolder)) {
@@ -1024,7 +1024,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
      * @param viewHolder The initial ViewHolder being dragged out, or null to lookup the live
      *     ViewHolder.
      */
-    public void collapseDraggedItem(@Nullable RecyclerView.ViewHolder viewHolder) {
+    public void collapseDraggedItem(RecyclerView.@Nullable ViewHolder viewHolder) {
         if (viewHolder != null) {
             mCollapsedViewHolder = viewHolder;
             mDraggedItemViewType = viewHolder.getItemViewType();
@@ -1380,7 +1380,7 @@ public class VerticalTabListItemTouchHelperCallback extends TabListItemTouchHelp
         return new RecyclerView.SimpleOnItemTouchListener() {
             private float mStartX;
             private float mStartY;
-            private @Nullable RecyclerView.ViewHolder mActiveViewHolder;
+            private RecyclerView.@Nullable ViewHolder mActiveViewHolder;
             private boolean mTrackingMouseDrag;
 
             @Override

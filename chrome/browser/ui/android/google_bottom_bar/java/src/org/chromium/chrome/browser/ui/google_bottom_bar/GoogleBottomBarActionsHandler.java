@@ -66,7 +66,7 @@ class GoogleBottomBarActionsHandler {
         mShareDelegateSupplier = shareDelegateSupplier;
     }
 
-    @Nullable View.OnClickListener getClickListener(ButtonConfig buttonConfig) {
+    View.@Nullable OnClickListener getClickListener(ButtonConfig buttonConfig) {
         switch (buttonConfig.getId()) {
             case ButtonId.SAVE -> {
                 return v -> onSaveButtonClick(buttonConfig, v);

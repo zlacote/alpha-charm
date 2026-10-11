@@ -120,7 +120,7 @@ public class NtpCardsMediator {
             }
 
             @Override
-            public @Nullable View.OnClickListener getListener(int type) {
+            public View.@Nullable OnClickListener getListener(int type) {
                 return null;
             }
 

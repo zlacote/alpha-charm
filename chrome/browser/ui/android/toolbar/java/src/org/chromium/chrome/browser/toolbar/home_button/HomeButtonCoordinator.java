@@ -49,7 +49,7 @@ public class HomeButtonCoordinator extends ToolbarChildButton implements TintObs
     private final Supplier<Boolean> mIsHomeButtonMenuDisabled;
 
     private final Callback<Context> mOnMenuClickCallback;
-    private @Nullable MVCListAdapter.ModelList mMenuList;
+    private MVCListAdapter.@Nullable ModelList mMenuList;
     private @Nullable ListMenuDelegate mListMenuDelegate;
 
     private final @Nullable NullableObservableSupplier<PropertyModel> mHomeActionModelSupplier;
@@ -167,7 +167,7 @@ public class HomeButtonCoordinator extends ToolbarChildButton implements TintObs
         ImageViewCompat.setImageTintList(mHomeButton, tint);
     }
 
-    public @Nullable MVCListAdapter.ModelList getMenuForTesting() {
+    public MVCListAdapter.@Nullable ModelList getMenuForTesting() {
         return mMenuList;
     }
 }

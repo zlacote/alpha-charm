@@ -37,7 +37,7 @@ import org.chromium.services.service_manager.InterfaceFactory;
 @NullMarked
 public class ChromePaymentRequestFactory implements InterfaceFactory<@Nullable PaymentRequest> {
     // Tests can inject behaviour on future PaymentRequests via these objects.
-    public static @Nullable ChromePaymentRequestService.Delegate sDelegateForTest;
+    public static ChromePaymentRequestService.@Nullable Delegate sDelegateForTest;
     private static @Nullable ChromePaymentRequestDelegateImplObserverForTest sObserverForTest;
     private final RenderFrameHost mRenderFrameHost;
 

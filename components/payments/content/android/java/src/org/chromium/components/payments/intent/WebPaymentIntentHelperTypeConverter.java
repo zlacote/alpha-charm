@@ -37,7 +37,7 @@ import java.util.Map;
 public final class WebPaymentIntentHelperTypeConverter {
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentCurrencyAmount
+    public static WebPaymentIntentHelperType.@Nullable PaymentCurrencyAmount
             fromMojoPaymentCurrencyAmount(@Nullable PaymentCurrencyAmount currencyAmount) {
         if (currencyAmount == null) return null;
         return new WebPaymentIntentHelperType.PaymentCurrencyAmount(
@@ -45,7 +45,7 @@ public final class WebPaymentIntentHelperTypeConverter {
     }
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentItem fromMojoPaymentItem(
+    public static WebPaymentIntentHelperType.@Nullable PaymentItem fromMojoPaymentItem(
             @Nullable PaymentItem item) {
         if (item == null) return null;
         return new WebPaymentIntentHelperType.PaymentItem(
@@ -53,7 +53,7 @@ public final class WebPaymentIntentHelperTypeConverter {
     }
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentDetailsModifier
+    public static WebPaymentIntentHelperType.@Nullable PaymentDetailsModifier
             fromMojoPaymentDetailsModifier(@Nullable PaymentDetailsModifier detailsModifier) {
         if (detailsModifier == null) return null;
         return new WebPaymentIntentHelperType.PaymentDetailsModifier(
@@ -62,7 +62,7 @@ public final class WebPaymentIntentHelperTypeConverter {
     }
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentMethodData fromMojoPaymentMethodData(
+    public static WebPaymentIntentHelperType.@Nullable PaymentMethodData fromMojoPaymentMethodData(
             @Nullable PaymentMethodData methodData) {
         if (methodData == null) return null;
         return new WebPaymentIntentHelperType.PaymentMethodData(
@@ -116,7 +116,7 @@ public final class WebPaymentIntentHelperTypeConverter {
     }
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentShippingOption
+    public static WebPaymentIntentHelperType.@Nullable PaymentShippingOption
             fromMojoPaymentShippingOption(@Nullable PaymentShippingOption shippingOption) {
         if (shippingOption == null) return null;
         return new WebPaymentIntentHelperType.PaymentShippingOption(
@@ -141,7 +141,7 @@ public final class WebPaymentIntentHelperTypeConverter {
     }
 
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentOptions fromMojoPaymentOptions(
+    public static WebPaymentIntentHelperType.@Nullable PaymentOptions fromMojoPaymentOptions(
             @Nullable PaymentOptions paymentOptions) {
         if (paymentOptions == null) return null;
         String shippingType = null;
@@ -191,7 +191,7 @@ public final class WebPaymentIntentHelperTypeConverter {
         return compatibleModifiers;
     }
 
-    private static @Nullable WebPaymentIntentHelperType.PaymentHandlerMethodData
+    private static WebPaymentIntentHelperType.@Nullable PaymentHandlerMethodData
             fromMojoPaymentHandlerMethodData(@Nullable PaymentHandlerMethodData methodData) {
         if (methodData == null) return null;
         return new WebPaymentIntentHelperType.PaymentHandlerMethodData(
@@ -228,7 +228,7 @@ public final class WebPaymentIntentHelperTypeConverter {
      * @return The converted update.
      */
     @Contract("!null -> !null")
-    public static @Nullable WebPaymentIntentHelperType.PaymentRequestDetailsUpdate
+    public static WebPaymentIntentHelperType.@Nullable PaymentRequestDetailsUpdate
             fromMojoPaymentRequestDetailsUpdate(@Nullable PaymentRequestDetailsUpdate update) {
         if (update == null) return null;
         return new WebPaymentIntentHelperType.PaymentRequestDetailsUpdate(

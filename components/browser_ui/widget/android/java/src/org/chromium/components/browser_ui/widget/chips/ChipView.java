@@ -430,7 +430,7 @@ public class ChipView extends LinearLayout {
      * @param loadingViewObserver An optional {@link LoadingView.Observer} to add to the
      *     LoadingView.
      */
-    public void showLoadingView(@Nullable LoadingView.Observer loadingViewObserver) {
+    public void showLoadingView(LoadingView.@Nullable Observer loadingViewObserver) {
         mLoadingView.addObserver(
                 new LoadingView.Observer() {
                     @Override
@@ -455,7 +455,7 @@ public class ChipView extends LinearLayout {
      * @param loadingViewObserver An optional {@link LoadingView.Observer} to add to the
      *     LoadingView.
      */
-    public void hideLoadingView(@Nullable LoadingView.Observer loadingViewObserver) {
+    public void hideLoadingView(LoadingView.@Nullable Observer loadingViewObserver) {
         hideLoadingView(loadingViewObserver, /* skipDelay= */ false);
     }
 
@@ -467,7 +467,7 @@ public class ChipView extends LinearLayout {
      * @param skipDelay If true, the loading UI hides immediately without fading out.
      */
     public void hideLoadingView(
-            @Nullable LoadingView.Observer loadingViewObserver, boolean skipDelay) {
+            LoadingView.@Nullable Observer loadingViewObserver, boolean skipDelay) {
         if (loadingViewObserver != null) {
             mLoadingView.addObserver(loadingViewObserver);
         }

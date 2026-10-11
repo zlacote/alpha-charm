@@ -116,7 +116,7 @@ public class StripLayoutGroupTitle extends StripLayoutView {
     // Shared state
     private boolean mIsShared;
     private @Nullable SharedImageTilesCoordinator mSharedImageTilesCoordinator;
-    private @Nullable SharedImageTilesConfig.Builder mSharedImageTilesConfigBuilder;
+    private SharedImageTilesConfig.@Nullable Builder mSharedImageTilesConfigBuilder;
     private @Nullable ViewResourceAdapter mAvatarResource;
     private float mAvatarWidthWithPadding;
     private final @ColorInt int mBubbleTint;

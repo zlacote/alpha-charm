@@ -41,7 +41,7 @@ public class AppMenuItemWithSubmenuProperties {
     public static final WritableObjectPropertyKey<Supplier<List<ListItem>>> SUBMENU_PROVIDER =
             new WritableObjectPropertyKey<>();
 
-    public static final WritableObjectPropertyKey<@Nullable View.OnClickListener> CLICK_LISTENER =
+    public static final WritableObjectPropertyKey<View.@Nullable OnClickListener> CLICK_LISTENER =
             new WritableObjectPropertyKey<>();
 
     public static final WritableBooleanPropertyKey IS_EXPANDED = new WritableBooleanPropertyKey();

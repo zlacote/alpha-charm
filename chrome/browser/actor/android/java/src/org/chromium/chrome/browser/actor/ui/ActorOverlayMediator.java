@@ -49,7 +49,7 @@ class ActorOverlayMediator
     private @Nullable Tab mCurrentTab;
     private @Nullable ActorUiTabController mTabController;
     private @Nullable LayoutManager mLayoutManager;
-    private @Nullable TabObscuringHandler.Token mTabObscuringToken;
+    private TabObscuringHandler.@Nullable Token mTabObscuringToken;
 
     /**
      * @param model The PropertyModel to modify.

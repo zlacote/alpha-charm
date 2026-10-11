@@ -114,8 +114,8 @@ public class ExtensionsToolbarCoordinatorImpl
             };
     private final MenuButtonPinningDelegate mMenuButtonPinningDelegate =
             new MenuButtonPinningDelegate();
-    private @Nullable View.OnLayoutChangeListener mLayoutChangeListener;
-    private @Nullable View mLayoutChangeAnchor;
+    private View.@Nullable OnLayoutChangeListener mLayoutChangeListener;
+    private View.@Nullable mLayoutChangeAnchor;
     private boolean mWasWindowCompact;
     private WindowAndroid mWindowAndroid;
     private Profile mProfile;

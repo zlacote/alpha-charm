@@ -44,7 +44,7 @@ public class SmsProviderGms {
 
     private final Wrappers.WebOTPServiceContext mContext;
     private @Nullable WindowAndroid mWindow;
-    private @Nullable Wrappers.SmsRetrieverClientWrapper mClient;
+    private Wrappers.@Nullable SmsRetrieverClientWrapper mClient;
 
     @VisibleForTesting
     public SmsProviderGms(

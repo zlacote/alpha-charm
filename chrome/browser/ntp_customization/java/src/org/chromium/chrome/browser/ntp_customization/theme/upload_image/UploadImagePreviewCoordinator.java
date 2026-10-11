@@ -68,7 +68,7 @@ public class UploadImagePreviewCoordinator implements InsetObserver.WindowInsets
     private final Activity mActivity;
     private final UiConfig mUiConfig;
     private final int mButtonBottomMargin;
-    private @Nullable View.OnLayoutChangeListener mLayoutChangeListener;
+    private View.@Nullable OnLayoutChangeListener mLayoutChangeListener;
     private @Nullable UploadImagePreviewLayout mPreviewLayout;
     private @Nullable CropImageView mCropImageView;
 

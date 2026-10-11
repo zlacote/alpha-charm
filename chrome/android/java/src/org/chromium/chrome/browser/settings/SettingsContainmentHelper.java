@@ -54,7 +54,7 @@ class SettingsContainmentHelper {
             new HashMap<>();
     private final Map<PreferenceFragmentCompat, ViewTreeObserver.OnGlobalLayoutListener>
             mGlobalLayoutListeners = new HashMap<>();
-    private @Nullable FragmentManager.FragmentLifecycleCallbacks mCallbacks;
+    private FragmentManager.@Nullable FragmentLifecycleCallbacks mCallbacks;
 
     /**
      * Fragments that have had the settings theme applied to them. Used as a performance

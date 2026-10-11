@@ -440,7 +440,7 @@ public final class DownloadInfo {
             return this;
         }
 
-        public Builder setProgress(@Nullable OfflineItem.Progress progress) {
+        public Builder setProgress(OfflineItem.@Nullable Progress progress) {
             mProgress = progress;
             return this;
         }

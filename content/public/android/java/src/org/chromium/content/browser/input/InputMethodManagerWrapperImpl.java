@@ -217,7 +217,7 @@ public class InputMethodManagerWrapperImpl implements InputMethodManagerWrapper 
 
     @Override
     public void updateExtractedText(
-            View view, int token, @Nullable android.view.inputmethod.ExtractedText text) {
+            View view, int token, android.view.inputmethod.@Nullable ExtractedText text) {
         if (DEBUG_LOGS) Log.d(TAG, "updateExtractedText");
         InputMethodManager manager = getInputMethodManager();
         if (manager == null) return;

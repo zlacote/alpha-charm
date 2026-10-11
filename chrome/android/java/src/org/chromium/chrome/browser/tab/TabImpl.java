@@ -397,7 +397,7 @@ class TabImpl implements Tab, TabInternal {
      *
      * <p>Can be non-null once V is the minimum SDK.
      */
-    private @Nullable SensitiveContentClient.Observer mSensitiveContentClientObserver;
+    private SensitiveContentClient.@Nullable Observer mSensitiveContentClientObserver;
 
     /** Tracks the origin of a background color change. */
     @IntDef({

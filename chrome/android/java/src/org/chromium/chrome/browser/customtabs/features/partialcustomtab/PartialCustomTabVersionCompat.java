@@ -79,7 +79,7 @@ abstract class PartialCustomTabVersionCompat {
     /** Implementation that supports R+ */
     @RequiresApi(Build.VERSION_CODES.R)
     private static class PartialCustomTabVersionCompatR extends PartialCustomTabVersionCompat {
-        private @Nullable WindowInsetsAnimation.Callback mAnimCallback;
+        private WindowInsetsAnimation.@Nullable Callback mAnimCallback;
 
         private PartialCustomTabVersionCompatR(Activity activity, Runnable positionUpdater) {
             super(activity, positionUpdater);

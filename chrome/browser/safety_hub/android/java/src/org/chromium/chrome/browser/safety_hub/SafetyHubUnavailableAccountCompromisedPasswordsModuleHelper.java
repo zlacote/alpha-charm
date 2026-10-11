@@ -47,7 +47,7 @@ public class SafetyHubUnavailableAccountCompromisedPasswordsModuleHelper
     }
 
     @Override
-    public @Nullable View.OnClickListener getPrimaryButtonListener() {
+    public View.@Nullable OnClickListener getPrimaryButtonListener() {
         return null;
     }
 

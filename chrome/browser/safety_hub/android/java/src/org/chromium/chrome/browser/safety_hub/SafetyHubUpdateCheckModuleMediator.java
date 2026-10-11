@@ -31,7 +31,7 @@ public class SafetyHubUpdateCheckModuleMediator
 
     private PropertyModel mModel;
 
-    private @Nullable UpdateStatusProvider.UpdateStatus mUpdateStatus;
+    private UpdateStatusProvider.@Nullable UpdateStatus mUpdateStatus;
 
     SafetyHubUpdateCheckModuleMediator(
             SafetyHubExpandablePreference preference,
@@ -114,7 +114,7 @@ public class SafetyHubUpdateCheckModuleMediator
         return false;
     }
 
-    public @Nullable UpdateStatusProvider.UpdateStatus getUpdateStatus() {
+    public UpdateStatusProvider.@Nullable UpdateStatus getUpdateStatus() {
         return mSafetyHubFetchService.getUpdateStatus();
     }
 
@@ -178,7 +178,7 @@ public class SafetyHubUpdateCheckModuleMediator
         }
     }
 
-    private @Nullable View.OnClickListener getPrimaryButtonListener() {
+    private View.@Nullable OnClickListener getPrimaryButtonListener() {
         if (mUpdateStatus == null) {
             return null;
         }
@@ -215,7 +215,7 @@ public class SafetyHubUpdateCheckModuleMediator
         }
     }
 
-    private @Nullable View.OnClickListener getSecondaryButtonListener() {
+    private View.@Nullable OnClickListener getSecondaryButtonListener() {
         if (mUpdateStatus == null) {
             return v -> {
                 mModuleDelegate.openGooglePlayStore(mPreference.getContext());

@@ -231,7 +231,7 @@ public class SelectionPopupControllerImpl extends ActionModeCallbackHelper
 
     // The classificaton result of the selected text if the selection exists and
     // SelectionClient was able to classify it, otherwise null.
-    private @Nullable SelectionClient.Result mClassificationResult;
+    private SelectionClient.@Nullable Result mClassificationResult;
 
     private boolean mPreserveSelectionOnNextLossOfFocus;
 
@@ -478,7 +478,7 @@ public class SelectionPopupControllerImpl extends ActionModeCallbackHelper
         return mResultCallback;
     }
 
-    public @Nullable SelectionClient.Result getClassificationResult() {
+    public SelectionClient.@Nullable Result getClassificationResult() {
         return mClassificationResult;
     }
 
@@ -1587,7 +1587,9 @@ public class SelectionPopupControllerImpl extends ActionModeCallbackHelper
         }
     }
 
-    // All coordinates are in @VisibleForTesting DIP @CalledByNative
+    // All coordinates are in DIP.
+    @VisibleForTesting
+    @CalledByNative
     void onSelectionEvent(
             @SelectionEventType int eventType, int left, int top, int right, int bottom) {
         if (DEBUG) {
@@ -1979,7 +1981,7 @@ public class SelectionPopupControllerImpl extends ActionModeCallbackHelper
      * @return The populated PendingSelectionMenu.
      */
     private PendingSelectionMenu populateMenu(
-            @MenuType int menuType, @Nullable SelectionClient.Result result) {
+            @MenuType int menuType, SelectionClient.@Nullable Result result) {
         assert mContext != null;
         PendingSelectionMenu pendingMenu = new PendingSelectionMenu(mContext);
         SelectActionMenuHelper.populateMenuItems(

@@ -140,7 +140,7 @@ public class SafetyHubPermissionsRevocationModuleMediator
                 : mPreference.getContext().getString(R.string.got_it);
     }
 
-    private @Nullable View.OnClickListener getPrimaryButtonListener() {
+    private View.@Nullable OnClickListener getPrimaryButtonListener() {
         if (mRevokedPermissionsCount == 0) {
             return null;
         }

@@ -55,7 +55,7 @@ public class TabGroupColorViewProvider implements Destroyable {
     private @TabGroupColorId int mColorId;
     private @Nullable FrameLayout mFrameLayout;
     private @Nullable SharedImageTilesCoordinator mSharedImageTilesCoordinator;
-    private @Nullable SharedImageTilesConfig.Builder mSharedImageTilesConfigBuilder;
+    private SharedImageTilesConfig.@Nullable Builder mSharedImageTilesConfigBuilder;
 
     /**
      * @param context The context to use to use for creating the view.

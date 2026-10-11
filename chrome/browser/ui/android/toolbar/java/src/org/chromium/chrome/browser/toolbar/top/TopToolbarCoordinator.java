@@ -99,7 +99,7 @@ import java.util.function.Supplier;
 public class TopToolbarCoordinator implements Toolbar, TopControlLayer {
     private static final int UNSPECIFIED_TOOLBAR_OFFSET = -1234;
     private static final String TAG = "TopToolbarCoord";
-    private @Nullable View.OnLongClickListener mGlicLongClickListener;
+    private View.@Nullable OnLongClickListener mGlicLongClickListener;
 
     /** Observes toolbar color or expanding state change. */
     public interface ToolbarColorObserver {
@@ -164,7 +164,7 @@ public class TopToolbarCoordinator implements Toolbar, TopControlLayer {
     private @Nullable NonNullObservableSupplier<Boolean> mIsGlicPinnedSupplier;
     private @Nullable Runnable mToggleGlicCallback;
     private @Nullable Callback<Boolean> mGlicVerticalTabsObserver;
-    private @Nullable IncognitoStateProvider.IncognitoStateObserver mIncognitoStateObserver;
+    private IncognitoStateProvider.@Nullable IncognitoStateObserver mIncognitoStateObserver;
 
     /**
      * Creates a new {@link TopToolbarCoordinator}.

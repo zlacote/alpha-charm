@@ -185,7 +185,7 @@ public class DeviceInput implements InputDeviceListener {
      * @return the Touchpad MotionRange of AXIS_X for the provided {@code deviceId}, or null if the
      *     device is not found or the device doesn't support touchpad source
      */
-    public static @Nullable InputDevice.MotionRange getTouchpadXAxisMotionRange(int deviceId) {
+    public static InputDevice.@Nullable MotionRange getTouchpadXAxisMotionRange(int deviceId) {
         DeviceInput instance = getInstance();
         synchronized (instance.mLock) {
             DeviceSnapshot snapshot = instance.mDeviceSnapshotsById.get(deviceId);
@@ -200,7 +200,7 @@ public class DeviceInput implements InputDeviceListener {
      * @return the Touchpad MotionRange of AXIS_Y for the provided {@code deviceId}, or null if the
      *     device is not found or the device doesn't support touchpad source
      */
-    public static @Nullable InputDevice.MotionRange getTouchpadYAxisMotionRange(int deviceId) {
+    public static InputDevice.@Nullable MotionRange getTouchpadYAxisMotionRange(int deviceId) {
         DeviceInput instance = getInstance();
         synchronized (instance.mLock) {
             DeviceSnapshot snapshot = instance.mDeviceSnapshotsById.get(deviceId);

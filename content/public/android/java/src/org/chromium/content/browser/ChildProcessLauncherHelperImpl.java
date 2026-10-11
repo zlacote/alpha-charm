@@ -108,7 +108,7 @@ public final class ChildProcessLauncherHelperImpl {
     private static @Nullable ChildConnectionAllocator sPrivilegedChildConnectionAllocator;
 
     // Used by tests to override the default sandboxed service allocator settings.
-    private static @Nullable ChildConnectionAllocator.ConnectionFactory
+    private static ChildConnectionAllocator.@Nullable ConnectionFactory
             sSandboxedServiceFactoryForTesting;
     private static int sSandboxedServicesCountForTesting = -1;
     private static @Nullable String sSandboxedServicesNameForTesting;
@@ -120,10 +120,10 @@ public final class ChildProcessLauncherHelperImpl {
     private static boolean sApplicationInForegroundOnUiThread;
 
     // Set on UI thread only, but null-checked on launcher thread as well.
-    private static @Nullable ApplicationStatus.ApplicationStateListener sAppStateListener;
+    private static ApplicationStatus.@Nullable ApplicationStateListener sAppStateListener;
 
     // Set on UI thread only, but null-checked on launcher thread as well.
-    private static @Nullable ApplicationStatus.WindowFocusChangedListener sWindowFocusListener;
+    private static ApplicationStatus.@Nullable WindowFocusChangedListener sWindowFocusListener;
 
     // TODO(boliu): These are only set for sandboxed renderer processes. Generalize them for
     // all types of processes.

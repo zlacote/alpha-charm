@@ -19,11 +19,11 @@ interface SafetyHubModuleHelper {
 
     @Nullable String getPrimaryButtonText();
 
-    @Nullable View.OnClickListener getPrimaryButtonListener();
+    View.@Nullable OnClickListener getPrimaryButtonListener();
 
     @Nullable String getSecondaryButtonText();
 
-    @Nullable View.OnClickListener getSecondaryButtonListener();
+    View.@Nullable OnClickListener getSecondaryButtonListener();
 
     @ModuleState
     int getModuleState();

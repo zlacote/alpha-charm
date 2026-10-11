@@ -1713,7 +1713,7 @@ public class UrlBar extends AutocompleteEditText {
                 CharSequence text,
                 int start,
                 int end,
-                @Nullable Paint.FontMetricsInt fm) {
+                Paint.@Nullable FontMetricsInt fm) {
             return (int) paint.measureText(ELLIPSIS);
         }
 

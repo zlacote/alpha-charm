@@ -108,7 +108,7 @@ public class GlicSettings extends ChromeBaseSettingsFragment {
     private @Nullable Preference mLauncherHotkeyPref;
     private @Nullable Preference mNavigationShortcutPref;
     private @Nullable PrefService mLocalPrefs;
-    private @Nullable GlicKeyedService.UserEnabledActuationOnWebObserver
+    private GlicKeyedService.@Nullable UserEnabledActuationOnWebObserver
             mUserEnabledActuationOnWebObserver;
 
     @Override

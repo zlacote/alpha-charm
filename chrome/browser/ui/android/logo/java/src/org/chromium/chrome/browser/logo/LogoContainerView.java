@@ -147,11 +147,11 @@ public class LogoContainerView extends FrameLayout {
         mLoadingView.destroy();
     }
 
-    @Nullable android.animation.ObjectAnimator getFadeAnimationForTesting() {
+    android.animation.@Nullable ObjectAnimator getFadeAnimationForTesting() {
         return mLogoView.getFadeAnimationForTesting(); // IN-TEST
     }
 
-    @Nullable android.graphics.Bitmap getNewLogoDrawableBitmapForTesting() {
+    android.graphics.@Nullable Bitmap getNewLogoDrawableBitmapForTesting() {
         return mLogoView.getNewLogoDrawableBitmapForTesting(); // IN-TEST
     }
 
@@ -163,7 +163,7 @@ public class LogoContainerView extends FrameLayout {
         return mLogoView.getAnimationEnabledForTesting(); // IN-TEST
     }
 
-    @Nullable LogoView.ClickHandler getClickHandlerForTesting() {
+    LogoView.@Nullable ClickHandler getClickHandlerForTesting() {
         return mLogoView.getClickHandlerForTesting(); // IN-TEST
     }
 

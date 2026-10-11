@@ -70,7 +70,7 @@ public class CustomTabToolbarButtonsCoordinator
             Callback<CustomButtonParams> customButtonClickCallback,
             CustomTabMinimizeDelegate minimizeDelegate,
             Supplier<@Nullable AppMenuHandler> appMenuHandler,
-            @Nullable CustomTabToolbar.OmniboxParams omniboxParams,
+            CustomTabToolbar.@Nullable OmniboxParams omniboxParams,
             ActivityLifecycleDispatcher lifecycleDispatcher,
             ActivityTabProvider tabProvider) {
         var customActionButtons =

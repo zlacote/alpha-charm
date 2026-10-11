@@ -16,7 +16,7 @@ import org.chromium.content_public.browser.WebContents;
  */
 @NullMarked
 /*package*/ class ArClassProvider {
-    /*package*/ static @Nullable XrImmersiveOverlay.Delegate getOverlayDelegate(
+    /*package*/ static XrImmersiveOverlay.@Nullable Delegate getOverlayDelegate(
             ArCompositorDelegate compositorDelegate,
             final WebContents webContents,
             boolean useOverlay,

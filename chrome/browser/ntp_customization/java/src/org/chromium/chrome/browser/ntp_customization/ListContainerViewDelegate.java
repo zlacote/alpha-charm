@@ -56,7 +56,7 @@ public interface ListContainerViewDelegate {
      *
      * @param type The type of the list item.
      */
-    @Nullable View.OnClickListener getListener(int type);
+    View.@Nullable OnClickListener getListener(int type);
 
     /**
      * Returns the resource id of the trailing icon in the list item for the given type.
@@ -95,7 +95,7 @@ public interface ListContainerViewDelegate {
      * @param type The type of the list item for which to get the listener.
      * @return The OnCheckedChangeListener for the item, or null if none is needed.
      */
-    default @Nullable CompoundButton.OnCheckedChangeListener getOnCheckedChangeListener(int type) {
+    default CompoundButton.@Nullable OnCheckedChangeListener getOnCheckedChangeListener(int type) {
         return null;
     }
 }

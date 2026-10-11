@@ -39,7 +39,7 @@ class LocationBarPhone extends LocationBarLayout {
     private final int mUrlCenteringSafetyMarginPx;
     private final int mMinUrlWidthPx;
     private final int mNonCenteredUrlBarEndPaddingPx;
-    private @Nullable LocationBarDataProvider.Observer mUrlObserver;
+    private LocationBarDataProvider.@Nullable Observer mUrlObserver;
 
     private @FuseboxState int mFuseboxState = FuseboxState.DISABLED;
 
@@ -445,7 +445,9 @@ class LocationBarPhone extends LocationBarLayout {
             return false;
         }
 
-        // Do not center in Android Hub or Custom @PageClassification Tabs int pageClassification = mLocationBarDataProvider.getPageClassification(false);
+        // Do not center in Android Hub or Custom Tabs.
+        @PageClassification
+        int pageClassification = mLocationBarDataProvider.getPageClassification(false);
         if (!OmniboxViewUtil.isRegularTabContext(pageClassification)) {
             return false;
         }

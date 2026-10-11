@@ -146,7 +146,7 @@ public abstract class OpenInAppEntryPoint implements OpenInAppMenuItemProvider {
                 }
             };
 
-    protected @Nullable OpenInAppDelegate.OpenInAppInfo mOpenInAppInfo;
+    protected OpenInAppDelegate.@Nullable OpenInAppInfo mOpenInAppInfo;
     protected final Context mContext;
 
     /**
@@ -282,7 +282,7 @@ public abstract class OpenInAppEntryPoint implements OpenInAppMenuItemProvider {
 
     private void updateOpenInAppInfo(
             @Nullable OpenInAppDelegate delegate,
-            @Nullable OpenInAppDelegate.OpenInAppInfo openInAppInfo) {
+            OpenInAppDelegate.@Nullable OpenInAppInfo openInAppInfo) {
         if (delegate != null) {
             delegate.updateOpenInAppInfo(openInAppInfo);
         }
@@ -298,10 +298,10 @@ public abstract class OpenInAppEntryPoint implements OpenInAppMenuItemProvider {
      * OpenInAppDelegate.OpenInAppInfo} changes.
      */
     protected void onOpenInAppInfoChanged(
-            @Nullable OpenInAppDelegate.OpenInAppInfo openInAppInfo) {}
+            OpenInAppDelegate.@Nullable OpenInAppInfo openInAppInfo) {}
 
     @Override
-    public @Nullable OpenInAppDelegate.OpenInAppInfo getOpenInAppInfoForMenuItem() {
+    public OpenInAppDelegate.@Nullable OpenInAppInfo getOpenInAppInfoForMenuItem() {
         return mOpenInAppInfo;
     }
 }

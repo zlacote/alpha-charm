@@ -32,7 +32,7 @@ public class ExpandedSheetHelperImpl implements ExpandedSheetHelper {
     private final TabObscuringHandler mTabObscuringHandler;
 
     /** A token held while the bottom sheet is obscuring all visible tabs. */
-    private @Nullable TabObscuringHandler.Token mTabObscuringToken;
+    private TabObscuringHandler.@Nullable Token mTabObscuringToken;
 
     /** A supplier of the activity's dialog manager. */
     private final ModalDialogManager mDialogManager;

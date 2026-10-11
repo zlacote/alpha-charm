@@ -138,7 +138,7 @@ public class FullscreenVideoPictureInPictureController {
     /** Current observers, if any. */
     private @Nullable DismissActivityOnTabChangeObserver mActivityTabObserver;
 
-    @Nullable FullscreenManager.Observer mFullscreenListener;
+    FullscreenManager.@Nullable Observer mFullscreenListener;
 
     private final Activity mActivity;
     private final ActivityTabProvider mActivityTabProvider;

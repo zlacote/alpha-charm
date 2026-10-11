@@ -13,11 +13,11 @@ import org.chromium.chrome.browser.setup_list.SetupListCompletable;
 @NullMarked
 public class EducationalTipSetupListBottomSheetItem {
     public final EducationalTipCardProvider provider;
-    public final @Nullable SetupListCompletable.CompletionState completionState;
+    public final SetupListCompletable.@Nullable CompletionState completionState;
 
     public EducationalTipSetupListBottomSheetItem(
             EducationalTipCardProvider provider,
-            @Nullable SetupListCompletable.CompletionState completionState) {
+            SetupListCompletable.@Nullable CompletionState completionState) {
         this.provider = provider;
         this.completionState = completionState;
     }

@@ -519,7 +519,7 @@ public class ToolbarManager
         private final TabObscuringHandler mTabObscuringHandler;
 
         /** A token held while the toolbar/omnibox is obscuring all visible tabs. */
-        private @Nullable TabObscuringHandler.Token mTabObscuringToken;
+        private TabObscuringHandler.@Nullable Token mTabObscuringToken;
 
         public TabObscuringCallback(TabObscuringHandler handler) {
             mTabObscuringHandler = handler;

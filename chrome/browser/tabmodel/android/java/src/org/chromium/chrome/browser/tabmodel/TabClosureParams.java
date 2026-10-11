@@ -42,7 +42,7 @@ public class TabClosureParams {
      * @param rootId The root ID of the tab group.
      * @return A TabClosureParams for the tab group or null if the group is not found.
      */
-    public static @Nullable TabClosureParams.CloseTabsBuilder forCloseTabGroup(
+    public static TabClosureParams.@Nullable CloseTabsBuilder forCloseTabGroup(
             TabModel tabModel, @Nullable Token tabGroupId) {
         List<Tab> relatedTabs = tabModel.getTabsInGroup(tabGroupId);
         if (relatedTabs.isEmpty()) return null;

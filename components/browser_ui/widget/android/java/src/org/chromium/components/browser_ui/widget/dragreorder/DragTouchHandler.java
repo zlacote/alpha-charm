@@ -71,7 +71,7 @@ public class DragTouchHandler extends ItemTouchHelper.Callback {
     private boolean mDefaultLongPressDragEnabled = true;
 
     // The view that is being dragged now; null means no view is being dragged now;
-    private @Nullable RecyclerView.ViewHolder mDraggedViewHolder;
+    private RecyclerView.@Nullable ViewHolder mDraggedViewHolder;
 
     /** Styles to use while dragging */
     private final int mDraggedBackgroundColor;
@@ -145,7 +145,7 @@ public class DragTouchHandler extends ItemTouchHelper.Callback {
     }
 
     /** Gets the value for {@link mDraggedViewHolder}. */
-    public @Nullable RecyclerView.ViewHolder getDraggedViewHolder() {
+    public RecyclerView.@Nullable ViewHolder getDraggedViewHolder() {
         return mDraggedViewHolder;
     }
 
@@ -213,7 +213,7 @@ public class DragTouchHandler extends ItemTouchHelper.Callback {
     }
 
     @Override
-    public void onSelectedChanged(@Nullable RecyclerView.ViewHolder viewHolder, int actionState) {
+    public void onSelectedChanged(RecyclerView.@Nullable ViewHolder viewHolder, int actionState) {
         super.onSelectedChanged(viewHolder, actionState);
         assumeNonNull(viewHolder);
         // similar to getMovementFlags, this method may be called multiple times

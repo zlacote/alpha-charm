@@ -153,7 +153,7 @@ public class ImeAdapterImpl
     private long mNativeImeAdapterAndroid;
     private InputMethodManagerWrapper mInputMethodManagerWrapper;
     private @Nullable ChromiumBaseInputConnection mInputConnection;
-    private @Nullable ChromiumBaseInputConnection.Factory mInputConnectionFactory;
+    private ChromiumBaseInputConnection.@Nullable Factory mInputConnectionFactory;
 
     // NOTE: This object will not be released by Android framework until the matching
     // ResultReceiver in the InputMethodService (IME app) gets gc'ed.
@@ -294,7 +294,7 @@ public class ImeAdapterImpl
     public static InputMethodManagerWrapper createDefaultInputMethodManagerWrapper(
             Context context,
             @Nullable WindowAndroid windowAndroid,
-            @Nullable InputMethodManagerWrapper.Delegate delegate) {
+            InputMethodManagerWrapper.@Nullable Delegate delegate) {
         return new InputMethodManagerWrapperImpl(context, windowAndroid, delegate);
     }
 
@@ -659,7 +659,7 @@ public class ImeAdapterImpl
     }
 
     @VisibleForTesting
-    @Nullable ChromiumBaseInputConnection.Factory getInputConnectionFactoryForTest() {
+    ChromiumBaseInputConnection.@Nullable Factory getInputConnectionFactoryForTest() {
         return mInputConnectionFactory;
     }
 

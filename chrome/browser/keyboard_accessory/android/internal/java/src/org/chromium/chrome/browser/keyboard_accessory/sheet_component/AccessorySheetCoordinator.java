@@ -127,7 +127,7 @@ public class AccessorySheetCoordinator implements AccessorySheetVisualStateProvi
      *
      * @return Returns a {@link KeyboardAccessoryData.Tab}.
      */
-    public @Nullable KeyboardAccessoryData.Tab getTab() {
+    public KeyboardAccessoryData.@Nullable Tab getTab() {
         return mMediator.getTab();
     }
 

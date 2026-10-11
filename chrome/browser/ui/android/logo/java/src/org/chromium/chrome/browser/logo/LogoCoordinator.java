@@ -48,7 +48,7 @@ public class LogoCoordinator {
     private LogoMediator mMediator;
     private @Nullable LogoContainerView mLogoView;
     private boolean mIsInMultiWindowModeOnTablet;
-    private @Nullable NtpCustomizationConfigManager.HomepageStateListener mHomepageStateListener;
+    private NtpCustomizationConfigManager.@Nullable HomepageStateListener mHomepageStateListener;
     // The current tint color of logo if the DSE is Google. It is null when the default colorful
     // Google logo is used.
     private @Nullable Integer mLogoColor;

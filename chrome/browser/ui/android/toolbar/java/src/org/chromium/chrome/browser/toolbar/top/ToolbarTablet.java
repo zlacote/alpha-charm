@@ -121,8 +121,8 @@ public class ToolbarTablet extends ToolbarLayout {
     private boolean mShouldShowGlicButton;
     private boolean mHasSpaceToShowGlicButton = true;
     private boolean mIsGlicUiVisible;
-    private @Nullable View.OnClickListener mGlicClickListener;
-    private @Nullable View.OnLongClickListener mGlicLongClickListener;
+    private View.@Nullable OnClickListener mGlicClickListener;
+    private View.@Nullable OnLongClickListener mGlicLongClickListener;
 
     private boolean mIsDestroyed;
     private boolean mShowingFusebox;

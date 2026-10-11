@@ -86,7 +86,7 @@ public class TabCardLabelView extends LinearLayout {
                         : View.IMPORTANT_FOR_ACCESSIBILITY_NO);
     }
 
-    private void setAsyncImageFactory(@Nullable AsyncImageView.Factory factory) {
+    private void setAsyncImageFactory(AsyncImageView.@Nullable Factory factory) {
         mIconView.setVisibility(factory == null ? View.GONE : View.VISIBLE);
         mIconView.setAsyncImageDrawable(factory, null);
     }

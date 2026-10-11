@@ -174,7 +174,7 @@ public class NewTabPageCoordinator implements ModuleDelegateHost {
     private @Nullable SearchEngineNameObserver mSearchEngineNameObserver;
     private @Nullable HomeModulesCoordinator mHomeModulesCoordinator;
     private @Nullable ViewGroup mHomeModulesContainer;
-    private @Nullable SetupListManager.Observer mSetupListObserver;
+    private SetupListManager.@Nullable Observer mSetupListObserver;
     private @Nullable Point mContextMenuStartPosition;
     private @Nullable NtpCustomizationCoordinator mNtpCustomizationCoordinator;
     private @Nullable SideUiStateProvider mSideUiStateProvider;

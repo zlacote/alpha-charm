@@ -16,7 +16,7 @@ import org.chromium.components.browser_ui.widget.async_image.AsyncImageView;
 public class TabCardLabelData {
     public final @TabCardLabelType int labelType;
     public final TextResolver textResolver;
-    public final @Nullable AsyncImageView.Factory asyncImageFactory;
+    public final AsyncImageView.@Nullable Factory asyncImageFactory;
     public final @Nullable TextResolver contentDescriptionResolver;
 
     /**
@@ -29,7 +29,7 @@ public class TabCardLabelData {
     public TabCardLabelData(
             @TabCardLabelType int labelType,
             TextResolver textResolver,
-            @Nullable AsyncImageView.Factory asyncImageFactory,
+            AsyncImageView.@Nullable Factory asyncImageFactory,
             @Nullable TextResolver contentDescriptionResolver) {
         this.labelType = labelType;
         this.textResolver = textResolver;

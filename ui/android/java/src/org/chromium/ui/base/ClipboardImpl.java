@@ -89,7 +89,7 @@ public class ClipboardImpl extends Clipboard
 
     private @Nullable ImageFileProvider mImageFileProvider;
 
-    private @Nullable ImageFileProvider.ClipboardFileMetadata mPendingCopiedImageMetadata;
+    private ImageFileProvider.@Nullable ClipboardFileMetadata mPendingCopiedImageMetadata;
 
     public ClipboardImpl(ClipboardManager clipboardManager) {
         mContext = ContextUtils.getApplicationContext();

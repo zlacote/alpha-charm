@@ -61,7 +61,7 @@ public interface InputMethodManagerWrapper {
      * #updateExtractedText(View,int, ExtractedText)
      */
     void updateExtractedText(
-            View view, int token, @Nullable android.view.inputmethod.ExtractedText text);
+            View view, int token, android.view.inputmethod.@Nullable ExtractedText text);
 
     /**
      * Call this when WindowAndroid object has changed.
