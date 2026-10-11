@@ -39,7 +39,9 @@ import java.util.function.Supplier;
  * Root component for the {@link HomeButton} on the toolbar. Currently owns context menu for the
  * home button.
  */
-// TODO(crbug.com/40676825): Fix the visibility bug on @NullMarked NTP public class HomeButtonCoordinator extends ToolbarChildButton implements TintObserver {
+// TODO(crbug.com/40676825): Fix the visibility bug on NTP.
+@NullMarked
+public class HomeButtonCoordinator extends ToolbarChildButton implements TintObserver {
     private static final int ID_SETTINGS = 0;
 
     private final Context mContext;
