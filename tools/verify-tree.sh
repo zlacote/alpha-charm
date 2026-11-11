@@ -79,7 +79,7 @@ for raw in files:
         continue
     scanned += 1
     for match in pattern.findall(text):
-        target = match.split(":", 1)[0].rstrip("/")
+        target = match.split(":", 1)[0].strip("/")
         if not target:
             continue
         candidate = os.path.join(repo_dir, target)
@@ -87,7 +87,11 @@ for raw in files:
         # matters: gn only needs the BUILD file and the sources beneath it.
         if os.path.exists(candidate):
             continue
-        if os.path.isdir(os.path.dirname(candidate)) and os.listdir(os.path.dirname(candidate)):
+        parent = os.path.dirname(candidate)
+        try:
+            if os.path.isdir(parent) and os.listdir(parent):
+                continue
+        except OSError:
             continue
         missing["%s -> //%s" % (path, target)] += 1
 
